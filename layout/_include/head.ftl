@@ -20,6 +20,7 @@
     <meta content="telephone=no" name="format-detection">
     <meta name="renderer" content="webkit">
     <meta name="theme-color" content="#ffffff">
+    <meta name="theme-author" content="ruby_woo">
 
     <@global.head />
     <#--  <script src="${theme_base!}/source/js/loadCSS.js"></script>  -->
@@ -32,15 +33,15 @@
     <#--    <link href="${theme_base!}/source/css/all.min.css" rel="stylesheet" type="text/css">-->
     <#--    <link href="${theme_base!}/source/css/share.min.css" rel="stylesheet" type="text/css">-->
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
-    <link rel="apple-touch-icon" sizes="180x180" href="${theme_base!}/source/images/apple-touch-icon-next.png?v=0.0.4">
-    <link rel="icon" type="image/png" sizes="32x32" href="${theme_base!}/source/images/favicon.ico?v=0.0.4">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
     <link rel="mask-icon" href="${theme_base!}/source/images/logo.svg?v=0.0.4" color="#222">
     <link rel="alternate" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
 
     <@global.statistics />
     <#if settings.custom??>
         <style>
-            ${settings.custom}
+            ${settings.custom!}
         </style>
     </#if>
 

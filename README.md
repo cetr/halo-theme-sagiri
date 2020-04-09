@@ -1,5 +1,5 @@
 # Halo Theme Sagiri
-> 原始主题见 [DIYGod Sagiri](https://github.com/DIYgod/hexo-theme-sagiri) 原设计自Ghost Subtle主题，感谢做出这么漂亮的主题， 在原主题上面新增一些个性化配置
+> 原始主题见 [DIYgod Sagiri](https://github.com/DIYgod/hexo-theme-sagiri) 原设计自 Hexo 主题，感谢做出这么漂亮的主题， 在原主题上面新增一些个性化配置
 
 # 主题预览
 ![预览](./screenshot.png)
@@ -13,12 +13,12 @@
 # 现有功能
 - [x] 博客基本页面
 - [x] 顶部菜单个性化icon
-- [ ] 首页的分页
+- [ ] 首页的文章分页
 - [ ] 回到顶部
-- [ ] 文章目录
+- [ ] 文章详情目录
 - [ ] 日志页面
 - [ ] 图库页面
 - [ ] 其他
 
 # 致谢
-感谢原作者 [DIYGod](https://diygod.me) 创作出这么好看的主题！
+感谢原作者 [DIYgod](https://diygod.me) 创作出这么好看的主题！
