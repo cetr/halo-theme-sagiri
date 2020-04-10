@@ -15,15 +15,16 @@
     <meta name="author" content="${user.nickname!}">
     <meta name="description" content="${meta_description!}">
     <meta name="keywords" content="${meta_keywords!}">
-    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="${atom_url!}">
-
-    <meta content="telephone=no" name="format-detection">
     <meta name="renderer" content="webkit">
-    <meta name="theme-color" content="#ffffff">
+
+    <meta name="theme-name" content="${theme.name!}">
+    <meta name="theme-version" content="${theme.version!}">
+    <meta name="theme-repo" content="${theme.repo!}">
     <meta name="theme-author" content="ruby_woo">
 
     <@global.head />
 
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="${atom_url!}">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"
           type="text/css">
 <#--    <link href="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>-->
@@ -47,71 +48,6 @@
             src: url(${theme_base!}/source/font/Candyshop.otf)
         }
     </style>
-
-    <script type="text/javascript" id="hexo.configurations">
-        var NexT = window.NexT || {};
-        var CONFIG = {
-            root: '/',
-            scheme: 'Pisces',
-            version: '0.0.4',
-            sidebar: {
-                "position": "right",
-                "display": "always",
-                "offset": 52,
-                "b2t": false,
-                "scrollpercent": false,
-                "onmobile": false
-            },
-            fancybox: true,
-            tabs: true,
-            motion: {
-                "enable": false,
-                "async": false,
-                "transition": {
-                    "post_block": "fadeIn",
-                    "post_header": "slideDownIn",
-                    "post_body": "slideDownIn",
-                    "coll_header": "slideLeftIn",
-                    "sidebar": "slideUpIn"
-                }
-            },
-            since: '2/9/2014 11:30:00',
-            onlineAPI: '',
-            site: {
-                title: 'Hexo',
-                subtitle: '',
-                author: 'John Doe'
-            },
-            duoshuo: {
-                userId: '0',
-                author: 'Author'
-            },
-            algolia: {
-                applicationID: '',
-                apiKey: '',
-                indexName: '',
-                hits: {"per_page": 10},
-                labels: {
-                    "input_placeholder": "Search for Posts",
-                    "hits_empty": "We didn't find any results for the search: ${query!}",
-                    "hits_stats": "${hits!} results found in ${time!} ms"
-                }
-            },
-            leancloud: {
-                enable: false,
-                appID: '',
-                appKey: ''
-            },
-            favicon: {
-                visibilitychange: true,
-                narmal: '${theme_base}/source/images/favicon.ico',
-                hidden: '${theme_base}/source/images/failure.ico',
-                show_text: '(/≧▽≦/)咦！又好了！',
-                hide_text: '(●—●)喔哟，崩溃啦！'
-            }
-        }
-    </script>
-
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"

@@ -2,48 +2,28 @@
     <i class="fa fa-arrow-up"></i>
 </div>
 <script type="text/javascript">
-    //页面加载后触发
-    window.onload = function(){
-        var btn = document.getElementById('back-to-top');
-        var timer = null;
-        var isTop = true;
-        //获取页面可视区高度
-        var clientHeight = document.documentElement.clientHeight;
-
-
-        //滚动条滚动时触发
-        window.onscroll = function() {
-            //显示回到顶部按钮
-            var osTop = document.documentElement.scrollTop || document.body.scrollTop;
-            if (osTop >= clientHeight) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            };
-            //回到顶部过程中用户滚动滚动条，停止定时器
-            if (!isTop) {
-                clearInterval(timer);
-            };
-            isTop = false;
-
-        };
-
-        btn.onclick = function() {
-            //设置定时器
-            timer = setInterval(function(){
-                //获取滚动条距离顶部高度
-                var osTop = document.documentElement.scrollTop || document.body.scrollTop;
-                var ispeed = Math.floor(-osTop / 7);
-
-                document.documentElement.scrollTop = document.body.scrollTop = osTop+ispeed;
-                //到达顶部，清除定时器
-                if (osTop == 0) {
-                    clearInterval(timer);
-                };
-                isTop = true;
-
-            },30);
-        };
+    // 利用 data-scroll 属性，滚动到任意 dom 元素
+    $.scrollto = function (scrolldom, scrolltime) {
+        $(scrolldom).click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $('html, body').animate({
+                scrollTop: $('body').offset().top
+            }, scrolltime);
+            return false;
+        });
     };
+    // 判断位置控制 返回顶部的显隐
+    var backTo = $(".back-to-top");
+    var backHeight = $(window).height() - 980 + 'px';
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 700 && backTo.css('top') === '-900px') {
+            backTo.css('top', backHeight);
+        }
+        else if ($(window).scrollTop() <= 700 && backTo.css('top') !== '-900px') {
+            backTo.css('top', '-900px');
+        }
+    });
 
+    // 启用
+    $.scrollto(".back-to-top", 800);
 </script>

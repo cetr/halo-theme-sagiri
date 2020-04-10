@@ -1,7 +1,7 @@
 <#macro pagebar>
     <nav class="pagination">
         <#if posts.getTotalPages() gt 0>
-            <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
+            <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="4">
                 <#if pagination.hasPrev>
                     <a class="extend prev" href="${pagination.prevPageFullPath!}"><i class="fas fa-angle-left"></i></a>
                 <#else >
