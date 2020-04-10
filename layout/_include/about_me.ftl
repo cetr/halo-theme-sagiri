@@ -1,4 +1,4 @@
-<section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+<section class="site-overview-wrap sidebar-panel sidebar-panel-active" id="about-me">
     <div class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope
              itemtype="http://schema.org/Person">

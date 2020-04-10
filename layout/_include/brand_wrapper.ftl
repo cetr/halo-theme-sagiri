@@ -1,5 +1,5 @@
 <div class="site-brand-wrapper"
-     style="background-image:url(${settings.background_picture!'https://cdn.jsdelivr.net/gh/DIYgod/diygod.me@gh-pages/images/header-gyx.png'})">
+     style="background-image:url(${settings.background_picture!'${theme_base!}/source/images/header-sagiri.jpg'})">
     <div class="site-meta">
         <div class="custom-logo-site-title">
             <div class="brand">

@@ -37,18 +37,6 @@
 
                                 <div class="post-block">
                                     <link itemprop="mainEntityOfPage" href="${post.fullPath}">
-
-                                <#--  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                  <meta itemprop="name" content="John Doe">
-                                  <meta itemprop="description" content="">
-                                  <meta itemprop="image" content="/images/DIYgod.jpg">
-                                </span>  -->
-
-                                <#--  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-                                  <meta itemprop="name" content="halo">
-                                </span>  -->
-
-
                                 <header class="post-header">
                                     <h1 class="post-title" itemprop="name headline">
                                         <a class="post-title-link" href="${post.fullPath}" itemprop="url">${post.title}</a>

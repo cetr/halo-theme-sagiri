@@ -23,15 +23,11 @@
     <meta name="theme-author" content="ruby_woo">
 
     <@global.head />
-    <#--  <script src="${theme_base!}/source/js/loadCSS.js"></script>  -->
+
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"
           type="text/css">
-    <link href="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
-    <#--    <link href="//fonts.cat.net/css?family=Sigmar One:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+<#--    <link href="https://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>-->
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.bootcss.com/social-share.js/1.0.9/css/share.min.css" rel="stylesheet" type="text/css"/>
-    <#--    <link href="${theme_base!}/source/css/all.min.css" rel="stylesheet" type="text/css">-->
-    <#--    <link href="${theme_base!}/source/css/share.min.css" rel="stylesheet" type="text/css">-->
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
@@ -40,10 +36,17 @@
 
     <@global.statistics />
     <#if settings.custom??>
-        <style>
+        <style type="text/css">
             ${settings.custom!}
         </style>
     </#if>
+
+    <style type="text/css">
+        @font-face {
+            font-family: Candyshop;
+            src: url(${theme_base!}/source/font/Candyshop.otf)
+        }
+    </style>
 
     <script type="text/javascript" id="hexo.configurations">
         var NexT = window.NexT || {};
@@ -110,7 +113,9 @@
     </script>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="en" class="theme-darling">
