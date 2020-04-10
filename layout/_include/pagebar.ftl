@@ -1,12 +1,24 @@
 <#macro pagebar>
-<nav class="pagination">
-    <span class="page-number current">1</span>
-    <a class="page-number" href="/page/2/">2</a>
-    <a class="page-number" href="/page/3/">3</a>
-    <span class="space">…</span>
-    <a class="page-number" href="/page/7/">7</a>
-    <a class="extend next" rel="next" href="/page/2/">
-        <i class="fas fa-angle-right"></i>
-        </a>
-</nav>
+    <nav class="pagination">
+        <#if posts.getTotalPages() gt 0>
+            <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
+                <#if pagination.hasPrev>
+                    <a class="extend prev" href="${pagination.prevPageFullPath!}"><i class="fas fa-angle-left"></i></a>
+                <#else >
+                </#if>
+                <#list pagination.rainbowPages as number>
+                    <#if number.isCurrent>
+                        <a class="page-number current" href="${number.fullPath!}">${number.page!}</a>
+                    <#else>
+                        <a class="page-number"
+                           href="${number.fullPath!}">${number.page!}</a>
+                    </#if>
+                </#list>
+                <#if pagination.hasNext>
+                    <a class="extend next" href="${pagination.nextPageFullPath!}"><i class="fas fa-angle-right"></i></a>
+                <#else >
+                </#if>
+            </@paginationTag>
+        </#if>
+    </nav>
 </#macro>
