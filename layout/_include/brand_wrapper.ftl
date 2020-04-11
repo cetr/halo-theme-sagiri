@@ -8,120 +8,28 @@
                 </span>
                 <div class="site-title">
                     <div id="animate-stroke" class="animate">
-                                            <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeH"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokei"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#stroke,"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#stroke "></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeD"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeI"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeY"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeg"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#strokeo"></use>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <use xlink:href="#stroked"></use>
-                                                </svg>
-                                            </span>
+                        <#assign title = blog_title!'halo'>
+                        <#list 1..title?length as index>
+                            <span>
+                                <svg>
+                                    <use xlink:href="#stroke${title[index-1]}"></use>
+                                </svg>
+                            </span>
+                        </#list>
                     </div>
-                    <div id="animate" class="animate">
-                                            <span>
-                                                <svg>
-                                                    <text id="strokeH">H</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokei">i</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="stroke,">,</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="stroke "></text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokeD">D</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokeI">I</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokeY">Y</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokeg">g</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="strokeo">o</text>
-                                                </svg>
-                                            </span>
-                        <span>
-                                                <svg>
-                                                    <text id="stroked">d</text>
-                                                </svg>
-                                            </span>
+                    <div id="animate" class="animate" data-title="${blog_title!'halo'}">
+                        <#list 1..title?length as index>
+                            <span>
+                                <svg>
+                                    <text id="stroke${title[index-1]}">${title[index-1]}</text>
+                                </svg>
+                            </span>
+                        </#list>
                     </div>
-                    <div id="guide" class="guide">
-                        <span>H</span>
-                        <span>i</span>
-                        <span>,</span>
-                        <span></span>
-                        <span>D</span>
-                        <span>I</span>
-                        <span>Y</span>
-                        <span>g</span>
-                        <span>o</span>
-                        <span>d</span>
+                    <div id="guide" data-title="${blog_title!'halo'}" class="guide">
+                        <#list 1..title?length as index>
+                            <span>${title[index-1]}</span>
+                        </#list>
                     </div>
                 </div>
                 <span class="logo-line-after">
