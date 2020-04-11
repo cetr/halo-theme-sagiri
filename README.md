@@ -5,7 +5,7 @@
 ![预览](./screenshot.png)
 
 # 预览地址
-[https://www.tsxygfy.cn/](https://www.tsxygfy.cn/)
+[ruby woo's blog](https://www.tsxygfy.cn/)
 # 安装方法
 1. 克隆或下载
 2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
