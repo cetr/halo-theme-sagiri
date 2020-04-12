@@ -208,3 +208,61 @@ style:
           label: '日志'
         - value: '<i class="menu-item-icon fa fa-fw"></i>'
           label: '自定义'
+music:
+  label: 音乐播放器设置
+  items:
+    music_enabled:
+      name: music_enabled
+      label: 开启背景音乐
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    music_source:
+      name: music_source
+      label: 音乐播放器播放源
+      type: select
+      default: netease
+      options:
+        - value: netease
+          label: 网易云音乐
+        - value: tencent
+          label: QQ音乐
+        - value: kugou
+          label: 酷狗音乐
+        - value: xiami
+          label: 虾米音乐
+        - value: baidu
+          label: 百度音乐
+    list_id:
+      name: list_id
+      label: 音乐播放器歌单ID
+      placeholder: '歌单ID'
+      description: '播放歌单默认为网易云音乐热歌榜'
+      default: '3778678'
+      type: text
+    sort_by:
+      name: sort_by
+      label: 歌单排序方式
+      default: 'list'
+      type: select
+      options:
+        - value: random
+          label: 随机
+        - value: list
+          label: 顺序
+    auto_play:
+      name: auto_play
+      label: 自动播放
+      default: false
+      type: radio
+      data-type: bool
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭

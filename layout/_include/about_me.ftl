@@ -64,21 +64,27 @@
 
         </div>
 
+<#--        <div class="cc-license motion-element" itemprop="license">-->
+<#--            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity"-->
+<#--               target="_blank">-->
+<#--                <img src="${theme_base}/source/images/cc-by-nc-sa.png" alt="Creative Commons"/>-->
+<#--            </a>-->
+<#--        </div>-->
 
-        <nav class="site-state motion-element">
-            <div class="site-state-item site-state-posts">
-                <a href="/archives/%20%7C%7C%20archive">
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">posts</span>
-                </a>
+        <#if settings.music_enabled!false>
+            <div class="motion-element">
+                <meting-js
+                    id="${settings.list_id!'3778678'}"
+                    server="${settings.music_source!'netease'}"
+                    type="playlist"
+                    lrc-type="0"
+                    order="${settings.sort_by!}"
+                    fixed="true"
+                    autoplay="${settings.auto_play?string('true', 'false')}"
+                    list-folded="true"
+                >
+                </meting-js>
             </div>
-        </nav>
-
-        <div class="cc-license motion-element" itemprop="license">
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity"
-               target="_blank">
-                <img src="${theme_base}/source/images/cc-by-nc-sa.png" alt="Creative Commons"/>
-            </a>
-        </div>
+        </#if>
     </div>
 </section>
