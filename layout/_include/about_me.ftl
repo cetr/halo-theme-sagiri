@@ -4,7 +4,7 @@
              itemtype="http://schema.org/Person">
 
             <img class="site-author-image" itemprop="image"
-                 src="${theme_base}/source/images/card.jpg"
+                 src="${settings.sitebar_img!theme_base+'/source/images/card.jpg'}"
                  alt="${user.nickname!}"/>
 
             <p class="site-author-name" itemprop="name"><span
@@ -63,28 +63,5 @@
 
 
         </div>
-
-<#--        <div class="cc-license motion-element" itemprop="license">-->
-<#--            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity"-->
-<#--               target="_blank">-->
-<#--                <img src="${theme_base}/source/images/cc-by-nc-sa.png" alt="Creative Commons"/>-->
-<#--            </a>-->
-<#--        </div>-->
-
-        <#if settings.music_enabled!false>
-            <div class="motion-element">
-                <meting-js
-                    id="${settings.list_id!'3778678'}"
-                    server="${settings.music_source!'netease'}"
-                    type="playlist"
-                    lrc-type="0"
-                    order="${settings.sort_by!}"
-                    fixed="true"
-                    autoplay="${settings.auto_play?string('true', 'false')}"
-                    list-folded="true"
-                >
-                </meting-js>
-            </div>
-        </#if>
     </div>
 </section>

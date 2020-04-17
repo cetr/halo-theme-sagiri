@@ -8,7 +8,11 @@
                 </span>
                 <div class="site-title">
                     <div id="animate-stroke" class="animate">
-                        <#assign title = blog_title!'halo'>
+                        <#if settings.slogan_text?length gt 0>
+                            <#assign title = settings.slogan_text>
+                        <#else >
+                            <#assign title = blog_title!'halo'>
+                        </#if>
                         <#list 1..title?length as index>
                             <span>
                                 <svg>
@@ -17,16 +21,16 @@
                             </span>
                         </#list>
                     </div>
-                    <div id="animate" class="animate" data-title="${blog_title!'halo'}">
+                    <div id="animate" class="animate" data-title="${settings.slogan_text!blog_title!}">
                         <#list 1..title?length as index>
                             <span>
                                 <svg>
-                                    <text id="stroke${title[index-1]}">${title[index-1]}</text>
+                                    <text style="fill: ${settings.slogan_text_color!'#ff9800'}" id="stroke${title[index-1]}">${title[index-1]}</text>
                                 </svg>
                             </span>
                         </#list>
                     </div>
-                    <div id="guide" data-title="${blog_title!'halo'}" class="guide">
+                    <div id="guide" data-title="${settings.slogan_text!blog_title!}" class="guide">
                         <#list 1..title?length as index>
                             <span>${title[index-1]}</span>
                         </#list>

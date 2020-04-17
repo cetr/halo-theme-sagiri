@@ -3244,7 +3244,7 @@ body {
 }
 
 .main {
-    padding-bottom: 380px
+    /*padding-bottom: 380px*/
 }
 
 .main:after, .main:before {

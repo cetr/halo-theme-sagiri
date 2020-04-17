@@ -105,15 +105,31 @@ style:
           label: '哲学'
         - value: 'l'
           label: '抖机灵'
+    background_picture:
+      name: background_picture
+      label: body背景图片
+      type: attachment
+    slogan_text:
+      name: slogan_text
+      label: slogan
+      type: text
+      default: ''
+      placeholder: '默认为博客标题'
+    slogan_text_color:
+      name: slogan_text_color
+      label: slogan字体颜色 16进制
+      type: text
+      default: '#ff9800'
+      placeholder: '请输入16进制颜色码'
+    sitebar_img:
+      name: sitebar_img
+      label: '侧边栏展示图片'
+      type: attachment
     custom:
       name: custom
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
-    background_picture:
-      name: background_picture
-      label: body背景图片
-      type: attachment
     nav_icon0:
       name: nav_icon0
       label: 第一个顶部菜单icon
