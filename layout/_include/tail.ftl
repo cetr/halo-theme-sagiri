@@ -22,5 +22,6 @@
 <script type="text/javascript" src="${theme_base!}/source/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/animate.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/backtotop.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
 </body>
 </html>

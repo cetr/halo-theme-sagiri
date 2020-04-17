@@ -12,12 +12,13 @@
 3. 用Halo的程序拉取 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
 > 感谢使用 halo-theme-sagiri 主题
 
-# 现有功能
+# 已完成功能
 - [x] 博客基本页面
-- [x] 顶部菜单个性化icon
+- [x] 顶部菜单个性化 icon
 - [x] 首页的文章分页
 - [x] 回到顶部
-- [ ] 文章详情目录
+- [x] 文章详情目录
+- [x] 个性化 slogan
 - [ ] 日志页面
 - [ ] 图库页面
 - [ ] 其他

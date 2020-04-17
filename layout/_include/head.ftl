@@ -25,6 +25,7 @@
     <@global.head />
 
     <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="${atom_url!}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.css">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
