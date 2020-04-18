@@ -3190,7 +3190,7 @@ pre .javascript .function, pre .keyword {
 
 body {
     background: #efefef;
-    cursor: url(../images/cursor.ico), auto
+    /*cursor: url(../images/cursor.ico), auto*/
 }
 
 .header {
