@@ -20,9 +20,8 @@
 </#if>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"> </script>
 <script type="text/javascript" src="${theme_base!}/source/js/evanyou.js"></script>
-<script type="text/javascript" src="${theme_base!}/source/js/TweenLite.min.js"></script>
-<script type="text/javascript" src="${theme_base!}/source/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/animate.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/backtotop.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/main.js"></script>

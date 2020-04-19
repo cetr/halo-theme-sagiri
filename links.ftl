@@ -42,12 +42,9 @@
                                             </#if>
                                         </@linkTag>
                                     </ul>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>

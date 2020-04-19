@@ -1,4 +1,4 @@
-var sagiri =  {
+const sagiri =  {
     // 目录
     postToc: function () {
         var headerEl = 'h1,h2,h3,h4,h5,h6';
@@ -53,7 +53,6 @@ var sagiri =  {
 
 $(function() {
     sagiri.scrolldown();
-
     hljs.initHighlightingOnLoad();
     sagiri.operation_aplayer_lrc();
     $(window).scroll(function () {

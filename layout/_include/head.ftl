@@ -1,6 +1,6 @@
 <#macro head title>
 <!DOCTYPE html>
-<html class="theme-next pisces" lang="zh">
+<html lang="zh">
 
 <head>
     <title>${title!}</title>
@@ -28,11 +28,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.css">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet">
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
     <link rel="alternate" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
-    <link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet">
 
     <@global.statistics />
     <#if settings.custom??>
@@ -62,6 +62,6 @@
     </#if>
 
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" lang="en" class="theme-darling">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh" class="theme-darling">
 
 </#macro>
