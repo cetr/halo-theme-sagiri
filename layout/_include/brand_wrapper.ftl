@@ -50,4 +50,7 @@
             <span class="btn-bar"></span>
         </button>
     </div>
+    <div class="header-info-scrolldown scrolldown_s">
+        <i class="fa fa-angle-down header-info-scrolldown__icon"></i>
+    </div>
 </div>

@@ -1,10 +1,16 @@
 $(document).pjax('a[target!=_blank]', '#main', {fragment: '#main',timeout: 8000});
+// pjax开始
 $(document).on('pjax:send', function() {
     $(".loading").css("display", "block");
 });
 
+// pjax结束
 $(document).on('pjax:complete', function() {
     $(".loading").css("display", "none");
-    //pjax加载结束的回调函数 解决js无法定位的问题
-    //重新定位容器内容的函数写在这里
+    $('script[data-pjax]').each(function () {
+        $(this).parent().append($(this).remove());
+    });
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+    });
 });
