@@ -24,21 +24,6 @@ sns:
       label: Twitter
       type: text
       placeholder: '只需填入 Twitter 用户名即可'
-    facebook:
-      name: facebook
-      label: Facebook
-      type: text
-      placeholder: '只需填入 Facebook 用户名即可'
-    instagram:
-      name: instagram
-      label: Instagram
-      type: text
-      placeholder: '只需填入 Instagram 用户名即可'
-    weibo:
-      name: weibo
-      label: 微博
-      type: text
-      placeholder: '只需填入微博 Id 即可'
     email:
       name: email
       label: Email
@@ -130,100 +115,6 @@ style:
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
-    nav_icon0:
-      name: nav_icon0
-      label: 第一个顶部菜单icon
-      type: select
-      default: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-      options:
-        - value: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-          label: '首页'
-        - value: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-          label: '归档'
-        - value: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-          label: '标签'
-        - value: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-          label: '友链'
-        - value: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-          label: '关于'
-        - value: '<i class="menu-item-icon fa fa-fw"></i>'
-          label: '自定义'
-    nav_icon1:
-      name: nav_icon1
-      label: 第二个顶部菜单icon
-      type: select
-      default: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-      options:
-        - value: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-          label: '首页'
-        - value: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-          label: '归档'
-        - value: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-          label: '标签'
-        - value: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-          label: '友链'
-        - value: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-          label: '关于'
-        - value: '<i class="menu-item-icon fa fa-fw"></i>'
-          label: '自定义'
-    nav_icon2:
-      name: nav_icon2
-      label: 第三个顶部菜单icon
-      type: select
-      default: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-      options:
-        - value: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-          label: '首页'
-        - value: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-          label: '归档'
-        - value: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-          label: '标签'
-        - value: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-          label: '友链'
-        - value: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-          label: '关于'
-        - value: '<i class="menu-item-icon fa fa-fw"></i>'
-          label: '自定义'
-    nav_icon3:
-      name: nav_icon3
-      label: 第四个顶部菜单icon
-      type: select
-      default: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-      options:
-        - value: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-          label: '首页'
-        - value: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-          label: '归档'
-        - value: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-          label: '标签'
-        - value: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-          label: '友链'
-        - value: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-          label: '关于'
-        - value: '<i class="menu-item-icon fa fa-fw"></i>'
-          label: '自定义'
-    nav_icon4:
-      name: nav_icon4
-      label: 第五个顶部菜单icon
-      type: select
-      default: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-      options:
-        - value: '<i class="menu-item-icon fa fa-fw fa-home"></i>'
-          label: '首页'
-        - value: '<i class="menu-item-icon fa fa-fw fa-archive"></i>'
-          label: '归档'
-        - value: '<i class="menu-item-icon fa fa-fw fa-tags"></i>'
-          label: '标签'
-        - value: '<i class="menu-item-icon fa fa-fw fa-link"></i>'
-          label: '友链'
-        - value: '<i class="menu-item-icon fa fa-fw fa-heartbeat"></i>'
-          label: '关于'
-        - value: '<i class="menu-item-icon fa fa-fw fa-camera-retro"></i>'
-          label: '图库'
-        - value: '<i class="menu-item-icon fa fa-fw fa-leanpub"></i>'
-          label: '日志'
-        - value: '<i class="menu-item-icon fa fa-fw"></i>'
-          label: '自定义'
 music:
   label: 音乐播放器设置
   items:

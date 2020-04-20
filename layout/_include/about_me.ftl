@@ -32,7 +32,7 @@
 
             <#if settings.qq??>
                 <span class="links-of-author-item scaleup">
-                        <a href="${theme_base}/source/images/qq-g.jpg" target="_blank"
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=${settings.qq!}&site=qq&menu=yes" target="_blank"
                            data-balloon-pos="up">
                             <i class="fa fa-fw fa-qq"></i>
                         </a>
