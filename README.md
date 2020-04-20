@@ -6,6 +6,7 @@
 
 # 预览地址
 [ruby woo's blog](https://www.tsxygfy.cn/)
+
 [弥枳'blog](https://blog.coor.top/)
 
 # 安装方法
@@ -27,4 +28,5 @@
 
 # 致谢
 感谢原作者 [DIYgod](https://diygod.me/) 创作出这么好看的主题！
+
 感谢 [弥枳](https://blog.coor.top/) 提供的建议！
