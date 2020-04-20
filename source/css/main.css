@@ -213,7 +213,7 @@ body {
 }
 
 .main {
-    margin: 1rem 0;
+    /*margin: 1rem 0;*/
 }
 
 @media (max-width: 991px) {
@@ -7223,3 +7223,30 @@ body {
     }
 }
 
+/*photos*/
+.picbox {
+    margin: 10px;
+    column-count: 3;
+    column-gap: 10px;
+}
+@media screen and (max-width: 560px) {
+    .picbox {
+        column-count: 1;
+    }
+}
+@media screen and (max-width: 900px) {
+    .picbox {
+        column-count: 2;
+    }
+}
+.pics {
+    margin-bottom: 10px;
+}
+
+.pics img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dadefb;
+    border-radius: 3px;
+    padding: .2rem;
+}
