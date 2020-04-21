@@ -6,7 +6,6 @@
             id="${settings.list_id!'3778678'}"
             server="${settings.music_source!'netease'}"
             type="playlist"
-            lrc-type="0"
             order="${settings.sort_by!}"
             fixed="true"
             autoplay="${settings.auto_play?string('true', 'false')}"
