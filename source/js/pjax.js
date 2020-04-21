@@ -13,7 +13,13 @@ $(document).on('pjax:complete', function() {
     document.querySelectorAll('pre code').forEach((block) => {
         hljs.highlightBlock(block);
     });
-    $('.container').velocity('scroll', {
-        offset: $('#header').height() - 60
-    });
+    if ($(window).width() < 991){
+        $('.container').velocity('scroll', {
+            offset: $('#header').height()
+        });
+    }else {
+        $('.container').velocity('scroll', {
+            offset: $('#header').height() - 60
+        });
+    }
 });

@@ -250,6 +250,12 @@ h1 {
     font-size: 22px
 }
 
+@media (max-width: 991px){
+    .main {
+        margin: 1rem 0;
+    }
+}
+
 @media (max-width: 991px) {
     h1 {
         font-size: 18px
