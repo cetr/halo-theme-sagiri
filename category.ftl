@@ -31,6 +31,11 @@
                                 </header>
                             </article>
                             </#list>
+                            <#if posts.totalPages gt 1>
+                                <@paginationTag method="categoryPosts" page="${posts.number}" total="${posts.totalPages}" display="3" slug="${category.slug!}">
+                                    <#include "layout/_include/pagebar.ftl">
+                                </@paginationTag>
+                            </#if>
                         </div>
                     </div>
                 </div>

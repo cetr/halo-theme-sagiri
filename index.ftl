@@ -89,8 +89,12 @@
                         </#list>
 
                     </section>
-                    <#include "layout/_include/pagebar.ftl">
-                    <@pagebar/>
+
+                    <#if posts.totalPages gt 1>
+                        <@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
+                            <#include "layout/_include/pagebar.ftl">
+                        </@paginationTag>
+                    </#if>
                 </div>
             </div>
 
