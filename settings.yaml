@@ -110,6 +110,17 @@ style:
       name: sitebar_img
       label: '侧边栏展示图片'
       type: attachment
+    evanyou:
+      name: evanyou
+      label: evanyou线条
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     custom:
       name: custom
       label: 自定义样式
