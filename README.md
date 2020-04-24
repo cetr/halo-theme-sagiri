@@ -22,9 +22,13 @@
 - [x] 全站 pjax
 - [x] 代码高亮
 - [x] 图库页面
+- [x] 站点运行时间
 - [ ] 搜索页面(开发中)
 - [ ] 日志页面
 - [ ] 其他
+
+# 更新日志
+- 见 [CHANGELOG](https://www.tsxygfy.cn/s/changelog.html)
 
 # 致谢
 感谢原作者 [DIYgod](https://diygod.me/) 创作出这么好看的主题！
