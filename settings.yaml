@@ -45,7 +45,7 @@ sns:
       type: text
       placeholder: '只需填入 Telegram Id 即可'
 style:
-  label: 样式设置
+  label: 博客设置
   items:
     hitokoto:
       name: hitokoto
@@ -121,6 +121,16 @@ style:
           label: 开启
         - value: false
           label: 关闭
+    blog_ran_time:
+      name: blog_ran_time
+      label: '站点运行时间统计'
+      type: text
+      description: '填入起始时间，格式：月/日/年 时:分:秒，如01/01/2020 12:00:00'
+    icp:
+      name: icp
+      label: 'ICP 备案号'
+      type: text
+      placeholder: '填入 ICP 备案号，没有则不填. '
     custom:
       name: custom
       label: 自定义样式

@@ -3288,7 +3288,7 @@ body {
 }
 
 .main {
-    /*padding-bottom: 380px*/
+    padding-bottom: 130px
 }
 
 .main:after, .main:before {
@@ -3444,7 +3444,7 @@ body {
 
 a {
     border-bottom: 0;
-    color: #ab3300
+    color: #888
 }
 
 .btn {
