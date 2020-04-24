@@ -17,13 +17,12 @@
                 <div id="content" class="content">
                     <section id="post" class="custom-page posts-expand">
                         <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/ImageGallery">
-                            <!--图片盒子-->
+                            <#--图片盒子-->
                             <div class="picbox">
                                 <@photoTag method="list">
                                     <#list photos as photo>
                                         <div class="pics">
-                                            <img src="${photo.url}"
-                                                 itemprop="contentUrl">
+                                            <img class="lazy fancybox galleryImg" data-original="${photo.url}" itemprop="contentUrl">
                                         </div>
                                     </#list>
                                 </@photoTag>

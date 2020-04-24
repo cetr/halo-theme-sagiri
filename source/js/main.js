@@ -48,6 +48,18 @@ const sagiri =  {
         } else {
             $('.aplayer-fixed .aplayer-lrc').show();
         }
+    },
+
+    // 图片懒加载
+    lazyload: function(className){
+        $(className).lazyload({
+            effect: "fadeIn",
+            placeholder: "https://i.loli.net/2020/04/24/4YqE3JN2zmGHujC.gif"
+        });
+    },
+
+    fancybox: function(){
+        $(".fancybox").fancybox();
     }
 }
 
@@ -55,6 +67,8 @@ $(function() {
     sagiri.scrolldown();
     hljs.initHighlightingOnLoad();
     sagiri.operation_aplayer_lrc();
+    sagiri.lazyload('img.lazy');
+    sagiri.fancybox();
     $(window).scroll(function () {
         sagiri.operation_aplayer_lrc();
     });
