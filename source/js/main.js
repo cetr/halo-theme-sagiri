@@ -65,12 +65,8 @@ const sagiri = {
     lazyload: function (className) {
         $(className).lazyload({
             effect: "fadeIn",
-            placeholder: "https://i.loli.net/2020/04/24/4YqE3JN2zmGHujC.gif"
+            placeholder: "https://s1.ax1x.com/2020/04/25/JyLKoQ.gif"
         });
-    },
-
-    fancybox: function () {
-        $(".fancybox").fancybox();
     }
 }
 
@@ -79,7 +75,6 @@ $(function () {
     hljs.initHighlightingOnLoad();
     sagiri.operation_aplayer_lrc();
     sagiri.lazyload('img.lazy');
-    sagiri.fancybox();
     $(window).scroll(function () {
         sagiri.operation_aplayer_lrc();
     });

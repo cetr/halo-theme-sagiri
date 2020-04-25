@@ -22,7 +22,9 @@
                                 <@photoTag method="list">
                                     <#list photos as photo>
                                         <div class="pics">
-                                            <img class="lazy fancybox galleryImg" data-original="${photo.url}" itemprop="contentUrl">
+                                            <a data-fancybox="images" href="${photo.url!}" data-caption="${photo.name!}">
+                                                <img class="lazy fancybox galleryImg" data-original="${photo.thumbnail!}"
+                                                     alt="${photo.name!}" itemprop="contentUrl" /></a>
                                         </div>
                                     </#list>
                                 </@photoTag>
