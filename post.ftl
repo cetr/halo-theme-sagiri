@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${blog_title!}"/>
+<@head title="${post.title} | ${blog_title!}"/>
 
 <div class="container sidebar-position-right page-home">
 
@@ -72,11 +72,32 @@
                                 <div class="post-body" itemprop="articleBody">
                                     ${post.formatContent!}
                                 </div>
-                                <#include "layout/comment.ftl">
-                                <@comment post=post type="post" />
+
+                                <footer class="post-footer">
+                                    <div class="post-nav">
+                                        <#if prevPost??>
+                                            <div class="post-nav-next post-nav-item">
+                                                <a href="${prevPost.fullPath!}" rel="next" title="${prevPost.title!}">
+                                                    <i class="fas fa-angle-left"></i> ${prevPost.title!}</a>
+                                            </div>
+                                        </#if>
+                                        <#if nextPost??>
+                                            <span class="post-nav-divider"></span>
+                                            <div class="post-nav-prev post-nav-item">
+                                                <a href="${nextPost.fullPath!}" rel="prev"
+                                                   title="${nextPost.title!}">${nextPost.title!}
+                                                    <i class="fas fa-angle-right"></i></a>
+                                            </div>
+                                        </#if>
+                                    </div>
+                                </footer>
                             </div>
                         </article>
                     </section>
+                </div>
+                <div id="comments" class="comments">
+                    <#include "layout/comment.ftl">
+                    <@comment post=post type="post" />
                 </div>
             </div>
 

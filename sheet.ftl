@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${blog_title!} | ${sheet.title!}"/>
+<@head title="${sheet.title!} | ${blog_title!}"/>
 
 <div class="container sidebar-position-right page-home">
 
@@ -22,33 +22,35 @@
                                     <h1 class="post-title" itemprop="name headline">
                                         ${post.title}
                                     </h1>
-<#--                                    <div class="post-meta">-->
-<#--                                        <span class="post-time" style="color: #00a7e0">-->
-<#--                                            <span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span>-->
-<#--                                            <span class="post-meta-item-text">发表于</span>-->
-<#--                                            <time title="Post created" itemprop="dateCreated datePublished" datetime="${post.createTime}">-->
-<#--                                                ${post.createTime?string('yyyy-MM-dd')}-->
-<#--                                            </time>-->
-<#--                                        </span>-->
+                                    <div class="post-meta">
+                                        <span class="post-time" style="color: #00a7e0">
+                                            <span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span>
+                                            <span class="post-meta-item-text">发表于</span>
+                                            <time title="Post created" itemprop="dateCreated datePublished" datetime="${post.createTime}">
+                                                ${post.createTime?string('yyyy-MM-dd')}
+                                            </time>
+                                        </span>
 
-
-<#--                                        <span class="leancloud_visitors" style="color:#ff3f1a">-->
-<#--                                            <span class="post-meta-divider">•</span>-->
-<#--                                            <span class="post-meta-item-icon"><i class="far fa-eye"></i></span>-->
-<#--                                            <span class="post-meta-item-text">被</span>-->
-<#--                                            <span class="leancloud-visitors-count">${post.visits}</span>-->
-<#--                                            <span class="post-meta-item-text">人看爆</span>-->
-<#--                                        </span>-->
-<#--                                    </div>-->
+                                        <span class="leancloud_visitors" style="color:#ff3f1a">
+                                            <span class="post-meta-divider">•</span>
+                                            <span class="post-meta-item-icon"><i class="far fa-eye"></i></span>
+                                            <span class="post-meta-item-text">被</span>
+                                            <span class="leancloud-visitors-count">${post.visits}</span>
+                                            <span class="post-meta-item-text">人看爆</span>
+                                        </span>
+                                    </div>
                                 </header>
 
                                 <div class="post-body" itemprop="articleBody">
                                     ${sheet.formatContent!}
-                                <#include "layout/comment.ftl">
-                                <@comment post=sheet type="sheet" />
+                                </div>
                             </div>
                         </article>
                     </section>
+                </div>
+                <div id="comments" class="comments">
+                    <#include "layout/comment.ftl">
+                    <@comment post=sheet type="sheet" />
                 </div>
             </div>
 

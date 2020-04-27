@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${options.blog_title!} | 标签"/>
+<@head title="标签 | ${blog_title!}"/>
 <div class="container sidebar-position-right page-home">
 
     <#include "layout/_include/header.ftl">

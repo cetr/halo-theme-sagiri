@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${blog_title!}"/>
+<@head title="相册 | ${blog_title!}"/>
 
 <div class="container sidebar-position-right page-home">
 

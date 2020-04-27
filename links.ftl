@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${options.blog_title!} | 友链"/>
+<@head title="友情链接 | ${blog_title!}"/>
 <div class="container sidebar-position-right page-home">
 
     <#include "layout/_include/header.ftl">
@@ -28,14 +28,12 @@
                                                     <li>
                                                         <a href="${link.url!}" target="_blank" rel="external">
                                                             <#if link.logo?? && link.logo?length gt 0>
-                                                                <img class="no-fancybox" src="${link.logo}">
+                                                                <img class="no-fancybox" src="${link.logo!}">
                                                             <#else >
                                                                 <img class="no-fancybox" src="${link.url}/favicon.ico">
                                                             </#if>
                                                             <h4>${link.name!}</h4>
-                                                            <#if link.description!=''>
-                                                                <p> - ${link.description}</p>
-                                                            </#if>
+                                                            <p>${link.description!"这个家伙很懒什么也没留下~"}</p>
                                                         </a>
                                                     </li>
                                                 </#list>

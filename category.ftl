@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${options.blog_title!} | 分类：${category.name}"/>
+<@head title="分类：${category.name} | ${blog_title!}"/>
 <div class="container sidebar-position-right page-home">
 
     <#include "layout/_include/header.ftl">

@@ -1,5 +1,5 @@
 <#include "layout/_include/head.ftl">
-<@head title="${blog_title!} | 归档"/>
+<@head title="归档 | ${blog_title!}"/>
 
 <div class="container sidebar-position-right page-archive">
 
