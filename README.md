@@ -6,7 +6,8 @@
   <br />
   <br />
     <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
-[![stars](https://flat.badgen.net/github/stars/feiyangbeyond/halo-theme-sagiri?icon=github)](https://github.com/feiyangbeyond/halo-theme-sagiri)[![license](https://img.shields.io/badge/license-GPL%203-blue.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri/blob/master/LICENSE) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri#donate)
+    
+[![stars](https://flat.badgen.net/github/stars/feiyangbeyond/halo-theme-sagiri?icon=github)](https://github.com/feiyangbeyond/halo-theme-sagiri) [![license](https://img.shields.io/badge/license-GPL%203-blue.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri/blob/master/LICENSE) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri#donate)
 
 ## 预览
 
