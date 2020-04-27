@@ -33,7 +33,10 @@
                                                                 <img class="no-fancybox" src="${link.url}/favicon.ico">
                                                             </#if>
                                                             <h4>${link.name!}</h4>
-                                                            <p>${link.description!"这个家伙很懒什么也没留下~"}</p>
+                                                            <#if link.description?length gt 0>
+                                                            <p>${link.description}</p>
+                                                            <#else><p>这个家伙很懒，什么也没留下~</p>
+                                                            </#if>
                                                         </a>
                                                     </li>
                                                 </#list>
