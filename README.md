@@ -1,21 +1,36 @@
-# Halo Theme Sagiri
-> 原始主题见 [DIYgod Sagiri](https://github.com/DIYgod/hexo-theme-sagiri) 原设计自 Hexo 主题，感谢做出这么漂亮的主题， 在原主题上面新增一些个性化配置
+<h1 align="center">Sagiri</h1>
+<h3 align="center">:cake: As lovely as sagiri</h3>
 
-# 预览截图
-![预览](./screenshot.png)
+<p align="center">
+  <a href="https://www.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://www.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#donate">捐赠支持</a>
+  <br />
+  <br />
+    <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
+[![stars](https://flat.badgen.net/github/stars/feiyangbeyond/halo-theme-sagiri?icon=github)](https://github.com/feiyangbeyond/halo-theme-sagiri)[![license](https://img.shields.io/badge/license-GPL%203-blue.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri/blob/master/LICENSE) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/feiyangbeyond/halo-theme-sagiri#donate)
 
-# 预览地址
-[ruby woo's blog](https://www.tsxygfy.cn/)
+## 预览
 
-[弥枳'blog](https://blog.coor.top/)
+![shot](./screenshot.png)
 
-# 安装方法
-1. 克隆或下载
-2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
-3. 用Halo的程序拉取 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
-> 感谢使用 halo-theme-sagiri 主题
 
-# 功能
+
+- [ruby woo 's blog](https://www.tsxygfy.cn)
+- [弥枳'blog](https://blog.coor.top)
+- ···
+
+如果你想（不想）展示在这里，可以提交相关 `PR`；不过呢，需要满足一些小小的条件：
+
+- 网站可稳定访问并配置了 https（至少不会几个月就无法访问）
+- 内容健康，和谐。
+- 更换模板（至少不会几个月就更换模板）
+
+当然最好：
+
+- 跟进主题更新
+- DIY 能力强
+
+## 功能
+
 - [x] 文章目录
 - [x] 个性化 slogan
 - [x] 集成音乐播放器
@@ -27,10 +42,39 @@
 - [ ] 日志页面
 - [ ] 其他
 
-# 更新日志
-- 见 [CHANGELOG](https://www.tsxygfy.cn/s/changelog.html)
+## 安装
 
-# 致谢
-感谢原作者 [DIYgod](https://diygod.me/) 创作出这么好看的主题！
+1. 克隆或下载
+2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
+3. 用Halo的程序拉取 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
+> 感谢使用 halo-theme-sagiri 主题
 
-感谢 [弥枳](https://blog.coor.top/) 提供的建议！
+## 更新日志
+
+见 [CHANGELOG](https://www.tsxygfy.cn/s/changelog.html)
+
+## 作者
+
+**halo-theme-sagiri** © [feiyangbeyond](https://github.com/feiyangbeyond), Released under the [GPL-3.0](./LICENSE) License.<br>
+Authored and maintained by [DIYgod](https://diygod.me) with help from contributors ([list](https://github.com/feiyangbeyond/halo-theme-sagiri/contributors)).
+
+> Blog [@ruby woo](https://www.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
+
+## 贡献
+
+如果你想 Sagiri 更加完善，你可以为它：
+
+- 提 issues
+- 修 bugs
+- 推 pr
+
+## 感谢
+
+- [DIYgod](https://diygod.me/)
+
+- [弥枳](https://blog.coor.top)
+
+## License
+
+本项目全部遵循 GPL V3 开源许可，如需更改，使用相关代码请保留署名 / 相关链接。
+http://www.gnu.org/licenses/gpl-3.0.html
