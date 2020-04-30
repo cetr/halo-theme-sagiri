@@ -65,6 +65,7 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 
 如果你想 Sagiri 更加完善，你可以为它：
 
+- 点 star
 - 提 issues
 - 修 bugs
 - 推 pr
