@@ -11,7 +11,7 @@
 
 ## 预览
 
-![shot](./screenshot.png)
+![screenshot.png](https://i.loli.net/2020/05/12/r1cDZ3iGFsfpPVk.png)
 
 
 
@@ -52,14 +52,14 @@
 
 ## 更新日志
 
-见 [CHANGELOG](https://www.tsxygfy.cn/s/changelog.html)
+见 [CHANGELOG](https://blog.tsxygfy.cn/s/changelog.html)
 
 ## 作者
 
 **halo-theme-sagiri** © [feiyangbeyond](https://github.com/feiyangbeyond), Released under the [GPL-3.0](./LICENSE) License.<br>
 Authored and maintained by [DIYgod](https://diygod.me) with help from contributors ([list](https://github.com/feiyangbeyond/halo-theme-sagiri/contributors)).
 
-> Blog [@ruby woo](https://www.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
+> Blog [@ruby woo](https://blog.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
 
 ## 贡献
 
