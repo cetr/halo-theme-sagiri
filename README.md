@@ -15,7 +15,7 @@
 
 
 
-- [ruby woo 's blog](https://www.tsxygfy.cn)
+- [FYanG's blog](https://blog.tsxygfy.cn)
 - [弥枳'blog](https://blog.coor.top)
 - ···
 
