@@ -3460,6 +3460,10 @@ a {
     background: #97dffd
 }
 
+.post-more-btn:hover {
+    background-color: #49b1f5
+}
+
 .posts-expand .post-body .fancybox img {
     border: none
 }

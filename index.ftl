@@ -73,10 +73,10 @@
                                 </header>
 
                                 <div class="post-body" itemprop="articleBody">
-                                    ${post.summary}
+                                    <p style="text-indent:2em;">${post.summary}</p>
                                     <div class="post-button text-center">
-                                        <a class="btn scaleup" href="${post.fullPath}" rel="contents">
-                                            Read more &raquo;
+                                        <a class="btn post-more-btn" href="${post.fullPath}" rel="contents">
+                                            阅读全文 &raquo;
                                         </a>
                                     </div>
                                 </div>
