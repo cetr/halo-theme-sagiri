@@ -102,10 +102,11 @@ style:
       placeholder: '默认为博客标题'
     slogan_text_color:
       name: slogan_text_color
-      label: slogan字体颜色 16进制
+      label: slogan字体颜色
       type: text
       default: '#ff9800'
-      placeholder: '请输入16进制颜色码'
+      placeholder: '请输入颜色码'
+      description: '填入颜色，16进制颜色：如#ff9800 或 RGB颜色：如rgb(14,127,0)'
     sitebar_img:
       name: sitebar_img
       label: '侧边栏展示图片'
@@ -136,9 +137,21 @@ style:
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
-music:
-  label: 音乐播放器设置
+other:
+  label: 其他设置
   items:
+    pjax_enabled:
+      name: pjax_enabled
+      label: 开启 Pjax
+      description: '如果开启了背景音乐建议开启 pjax'
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     music_enabled:
       name: music_enabled
       label: 开启背景音乐

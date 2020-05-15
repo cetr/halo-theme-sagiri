@@ -19,7 +19,7 @@
     <meta name="theme-name" content="${theme.name!}">
     <meta name="theme-version" content="${theme.version!}">
     <meta name="theme-repo" content="${theme.repo!}">
-    <meta name="theme-author" content="ruby_woo">
+    <meta name="theme-author" content="fyang">
 
     <@global.head />
 
@@ -47,7 +47,9 @@
         }
     </style>
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>
+    <#if settings.pjax_enabled!false>
     <script type="text/javascript" src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    </#if>
     <script src="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>

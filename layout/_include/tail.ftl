@@ -29,7 +29,24 @@
 <script type="text/javascript" src="${theme_base!}/source/js/main.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/animate.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/backtotop.js"></script>
+<#if settings.pjax_enabled!false>
 <script type="text/javascript" src="${theme_base!}/source/js/pjax.js"></script>
 <script data-pjax="" type="text/javascript" src="${theme_base!}/source/js/pjax-main.js"></script>
+<#elseif is_index!false>
+<script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
+<#else >
+<script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
+<script type="text/javascript">
+    if ($(window).width() < 991){
+        $('.container').velocity('scroll', {
+            offset: $('#header').height()
+        });
+    }else {
+        $('.container').velocity('scroll', {
+            offset: $('#header').height() - 60
+        });
+    }
+</script>
+</#if>
 </body>
 </html>
