@@ -16,7 +16,7 @@
         </p>
         <!-- 以下信息，请不要删除，谢谢！ -->
         <p>Proudly published with <a href="https://halo.run/" target="_blank" class="external" rel="nofollow">Halo</a> ·
-            Theme by <a href="https://www.tsxygfy.cn/" target="_blank" class="external" rel="nofollow">ruby woo</a> ·
+            Theme by <a href="https://www.tsxygfy.cn/" target="_blank" class="external" rel="nofollow">fyang</a> ·
             <a href="${rss_url!}" target="_blank" class="external" rel="nofollow">RSS</a>
         </p>
     </div>
