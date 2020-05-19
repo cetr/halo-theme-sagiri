@@ -10,9 +10,7 @@ $(document).on('pjax:complete', function() {
     $('script[data-pjax]').each(function () {
         $(this).parent().append($(this).remove());
     });
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
+
     if ($(window).width() < 991){
         $('.container').velocity('scroll', {
             offset: $('#header').height()

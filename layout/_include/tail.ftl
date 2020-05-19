@@ -5,6 +5,7 @@
 <div class="loading" style="display: none;"> <div class="loader"></div></div>
 <#if settings.music_enabled!false>
 <meting-js
+        async="true"
         id="${settings.list_id!'3778678'}"
         server="${settings.music_source!'netease'}"
         type="playlist"
@@ -19,7 +20,7 @@
 <script src="https://v1.hitokoto.cn/?c=${settings.hitokoto_type!}&encode=js&select=%23hitokoto" defer></script>
 </#if>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<#--<script type="text/javascript" src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"> </script>
@@ -29,14 +30,16 @@
 <script type="text/javascript" src="${theme_base!}/source/js/main.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/animate.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/backtotop.js"></script>
+<script data-pjax type="text/javascript" src="${theme_base!}/source/prism-all.js"></script>
 <#if settings.pjax_enabled!false>
 <script type="text/javascript" src="${theme_base!}/source/js/pjax.js"></script>
-<script data-pjax="" type="text/javascript" src="${theme_base!}/source/js/pjax-main.js"></script>
+<script data-pjax type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
 <#elseif is_index!false>
 <script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
+
 <#else >
 <script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
-<script type="text/javascript">
+<script>
     if ($(window).width() < 991){
         $('.container').velocity('scroll', {
             offset: $('#header').height()

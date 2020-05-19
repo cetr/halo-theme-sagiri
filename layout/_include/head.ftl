@@ -27,9 +27,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.css">
     <link href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-    <link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet">
+<#--    <link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css" media="screen">
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
+    <link href="${theme_base!}/source/prism.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
     <link rel="alternate" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">

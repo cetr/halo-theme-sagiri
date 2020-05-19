@@ -69,12 +69,3 @@ const sagiri = {
         });
     }
 }
-
-$(function () {
-    sagiri.scrolldown();
-    hljs.initHighlightingOnLoad();
-    sagiri.operation_aplayer_lrc();
-    $(window).scroll(function () {
-        sagiri.operation_aplayer_lrc();
-    });
-})
