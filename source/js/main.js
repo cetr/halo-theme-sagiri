@@ -65,7 +65,7 @@ const sagiri = {
     lazyload: function (className) {
         $(className).lazyload({
             effect: "fadeIn",
-            placeholder: "https://s1.ax1x.com/2020/04/25/JyLKoQ.gif"
+            placeholder: "https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/image/JyLKoQ.gif"
         });
     }
 }
