@@ -2,7 +2,7 @@
 <h3 align="center">:cake: As lovely as sagiri</h3>
 
 <p align="center">
-  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://www.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
+  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://blog.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
   <br />
   <br />
     <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
