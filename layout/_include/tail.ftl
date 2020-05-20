@@ -29,13 +29,11 @@
 <script type="text/javascript" src="${theme_base!}/source/js/main.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/animate.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/backtotop.js"></script>
+<script data-pjax src="${theme_base!}/source/js/normal.js"></script>
 <#if settings.pjax_enabled!false>
 <script type="text/javascript" src="${theme_base!}/source/js/pjax.js"></script>
-<script data-pjax src="${theme_base!}/source/js/normal.js"></script>
 <#elseif is_index!false>
-<script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
 <#else >
-<script type="text/javascript" src="${theme_base!}/source/js/normal.js"></script>
 <script>sagiri.scrollAfterPjax(300)</script>
 </#if>
 <script data-pjax src="//cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/js/prism.js"></script>
