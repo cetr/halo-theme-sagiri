@@ -2,7 +2,7 @@
 <h3 align="center">:cake: As lovely as sagiri</h3>
 
 <p align="center">
-  <a href="https://www.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://www.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#donate">捐赠支持</a>
+  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://www.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
   <br />
   <br />
     <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
@@ -39,7 +39,7 @@
 - [x] 代码高亮
 - [x] 图库页面
 - [x] 站点运行时间
-- [ ] 搜索页面(开发中)
+- [ ] 搜索页面
 - [ ] 日志页面
 - [ ] 其他
 
@@ -65,10 +65,12 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 
 如果你想 Sagiri 更加完善，你可以为它：
 
-- 点 star
+- 点 star（求star！）
 - 提 issues
 - 修 bugs
 - 推 pr
+
+如果你有一下建议，可以在 [issues](https://github.com/feiyangbeyond/halo-theme-sagiri/issues) 提出，也可以[联系我](https://blog.tsxygfy.cn)。
 
 ## 感谢
 
