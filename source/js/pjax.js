@@ -2,6 +2,7 @@ $(document).pjax('a[target!=_blank]', '#main', {fragment: '#main',timeout: 8000}
 // pjax开始
 $(document).on('pjax:send', function() {
     $(".loading").css("display", "block");
+    if ($('#toc').length) tocbot.destroy();
 });
 
 // pjax结束
@@ -10,14 +11,5 @@ $(document).on('pjax:complete', function() {
     $('script[data-pjax]').each(function () {
         $(this).parent().append($(this).remove());
     });
-
-    if ($(window).width() < 991){
-        $('.container').velocity('scroll', {
-            offset: $('#header').height()
-        });
-    }else {
-        $('.container').velocity('scroll', {
-            offset: $('#header').height() - 60
-        });
-    }
+    sagiri.scrollAfterPjax(300);
 });

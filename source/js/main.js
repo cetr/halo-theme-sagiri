@@ -29,11 +29,11 @@ const sagiri = {
     },
 
     // 悬浮
-    affix: function () {
+    affix: function (topMax, bottomMax) {
         $('.sidebar-inner').affix({
             offset: {
-                top: 700,
-                bottom: 465
+                top: topMax,
+                bottom: bottomMax
             }
         })
     },
@@ -67,5 +67,27 @@ const sagiri = {
             effect: "fadeIn",
             placeholder: "https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/image/JyLKoQ.gif"
         });
+    },
+
+    scrollAfterPjax: function (timeout) {
+        setTimeout(() => {
+            if ($(window).width() < 991) {
+                $('.container').velocity('scroll', {
+                    offset: $('#header').height()
+                });
+            } else {
+                $('.container').velocity('scroll', {
+                    offset: $('#header').height() - 60
+                });
+            }
+        }, timeout);
     }
 }
+
+$(function () {
+    sagiri.scrolldown();
+    sagiri.operation_aplayer_lrc();
+    $(window).scroll(function () {
+        sagiri.operation_aplayer_lrc();
+    });
+})
