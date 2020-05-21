@@ -45,9 +45,9 @@
             src: url(https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
         }
     </style>
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
     <#if settings.pjax_enabled!false>
-    <script type="text/javascript" src="//cdn.bootcss.com/jquery.pjax/3.5.0/jquery.pjax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
     </#if>
     <script src="//cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
