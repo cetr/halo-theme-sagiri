@@ -54,6 +54,9 @@ const sagiri = {
         var scrollTop = $(window).scrollTop();
         var scrollHeight = $(document).height();
         var windowHeight = $(window).height();
+        if($('.aplayer-lrc').hasClass('aplayer-lrc-hide')){
+            return;
+        }
         if (scrollTop + windowHeight >= scrollHeight - 20) {
             $('.aplayer-fixed .aplayer-lrc').hide();
         } else {
