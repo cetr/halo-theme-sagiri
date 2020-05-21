@@ -11,5 +11,5 @@ $(document).on('pjax:complete', function() {
     $('script[data-pjax]').each(function () {
         $(this).parent().append($(this).remove());
     });
-    sagiri.scrollAfterPjax(300);
+    sagiri.scrollAfterPjax(200);
 });

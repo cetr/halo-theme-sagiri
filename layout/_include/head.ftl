@@ -43,7 +43,7 @@
     <style type="text/css">
         @font-face {
             font-family: Candyshop;
-            src: url(${theme_base!}/source/font/Candyshop.otf)
+            src: url(https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
         }
     </style>
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>
