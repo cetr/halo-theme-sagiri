@@ -54,7 +54,7 @@ const sagiri = {
         var scrollTop = $(window).scrollTop();
         var scrollHeight = $(document).height();
         var windowHeight = $(window).height();
-        if($('.aplayer-lrc').hasClass('aplayer-lrc-hide')){
+        if ($('.aplayer-lrc').hasClass('aplayer-lrc-hide')) {
             return;
         }
         if (scrollTop + windowHeight >= scrollHeight - 20) {
@@ -84,6 +84,16 @@ const sagiri = {
                 });
             }
         }, timeout);
+    },
+
+    postShare: function () {
+        if ($('.post-share').length) {
+            $('.post-share').share({
+                disabled: ['tencent', 'douban', 'linkedin', 'diandian', 'facebook', 'google'],
+                wechatQrcodeTitle: "微信扫一扫",
+                wechatQrcodeHelper: '<p>微信扫一扫，右上角分享</p>'
+            })
+        }
     }
 }
 

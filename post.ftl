@@ -36,13 +36,15 @@
                             <div class="post-block">
                                 <header class="post-header">
                                     <h1 class="post-title" itemprop="name headline">
-                                        <a class="post-title-link" href="${post.fullPath}" itemprop="url">${post.title}</a>
+                                        <a class="post-title-link" href="${post.fullPath}"
+                                           itemprop="url">${post.title}</a>
                                     </h1>
                                     <div class="post-meta">
                                         <span class="post-time" style="color: #00a7e0">
                                             <span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span>
                                             <span class="post-meta-item-text">发表于</span>
-                                            <time title="Post created" itemprop="dateCreated datePublished" datetime="${post.createTime}">
+                                            <time title="Post created" itemprop="dateCreated datePublished"
+                                                  datetime="${post.createTime}">
                                                 ${post.createTime?string('yyyy-MM-dd')}
                                             </time>
                                         </span>
@@ -72,7 +74,7 @@
                                 <div class="post-body" itemprop="articleBody">
                                     ${post.formatContent!}
                                 </div>
-
+                                <div class="post-share">分享到：</div>
                                 <footer class="post-footer">
                                     <div class="post-nav">
                                         <#if prevPost??>
@@ -95,6 +97,7 @@
                         </article>
                     </section>
                 </div>
+                <script>$('pre').addClass("line-numbers");</script>
                 <div id="comments" class="comments">
                     <#include "layout/comment.ftl">
                     <@comment post=post type="post" />

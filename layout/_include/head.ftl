@@ -14,6 +14,7 @@
     <meta name="description" content="${meta_description!}">
     <meta name="keywords" content="${meta_keywords!}">
     <meta name="renderer" content="webkit">
+    <meta name="site" content="${blog_url!}" />
 
     <meta name="theme-name" content="${theme.name!}">
     <meta name="theme-version" content="${theme.version!}">
@@ -26,8 +27,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.5.0/tocbot.css">
     <link href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css" media="screen">
     <link href="//cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/css/prism.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" rel="stylesheet" type="text/css">
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">

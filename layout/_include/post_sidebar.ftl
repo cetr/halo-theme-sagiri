@@ -10,6 +10,7 @@
     <script>
         $(function() {
             sagiri.postToc();
+            sagiri.postShare();
             $('#about-me').css('display','none').css('opacity', '1');
             $('.sidebar-nav-toc').click(function () {
                 $(this).addClass('sidebar-nav-active');
