@@ -59,7 +59,7 @@
 **halo-theme-sagiri** © [feiyangbeyond](https://github.com/feiyangbeyond), Released under the [GPL-3.0](./LICENSE) License.<br>
 Authored and maintained by [DIYgod](https://diygod.me) with help from contributors ([list](https://github.com/feiyangbeyond/halo-theme-sagiri/contributors)).
 
-> Blog [@ruby woo](https://blog.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
+> Blog [@fyang](https://blog.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
 
 ## 贡献
 
