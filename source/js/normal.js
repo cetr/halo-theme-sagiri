@@ -1,4 +1,4 @@
 $(function () {
-    sagiri.affix(700, 465);
+    sagiri.affix(700, 290);
     sagiri.lazyload('img.lazy');
 });
