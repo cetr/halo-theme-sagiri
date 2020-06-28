@@ -25,7 +25,7 @@
                                 <div class="post-block">
                                     <header class="post-header"></header>
                                     <div class="post-body" itemprop="articleBody">
-                                        <p style="text-indent:2em;">${journal.content!}</p>
+                                        <div style="text-indent:2em;">${journal.content!}</div>
                                     </div>
                                     <footer class="post-footer">
                                         <p style="float:right; font-style: italic">—— <a href="${blog_url!}" rel="external nofollow">${user.nickname}</a> ${journal.createTime?string('yyyy年MM月dd日')}</p>
