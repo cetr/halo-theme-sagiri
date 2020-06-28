@@ -21,10 +21,13 @@
                             </header>
                             <div class="post-body">
                                 <div class="links">
-                                    <ul>
-                                        <@linkTag method="list">
-                                            <#if links?? && links?size gt 0>
-                                                <#list links as link>
+                                    <@linkTag method="listTeams">
+                                        <#list teams as item>
+                                            <#if item.team?? && item.team!=''>
+                                                <h3 style="width: 100%; margin: 10px;">${item.team}</h3>
+                                            </#if>
+                                            <ul>
+                                                <#list item.links?sort_by('priority') as link>
                                                     <li>
                                                         <a href="${link.url!}" target="_blank" rel="external">
                                                             <#if link.logo?? && link.logo?length gt 0>
@@ -34,22 +37,21 @@
                                                             </#if>
                                                             <h4>${link.name!}</h4>
                                                             <#if link.description?length gt 0>
-                                                            <p>${link.description}</p>
+                                                                <p>${link.description}</p>
                                                             <#else><p>这个家伙很懒，什么也没留下~</p>
                                                             </#if>
                                                         </a>
                                                     </li>
                                                 </#list>
-                                            </#if>
-                                        </@linkTag>
-                                    </ul>
+                                            </ul>
+                                        </#list>
+                                    </@linkTag>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="sidebar-toggle">
                 <div class="sidebar-toggle-line-wrap">
