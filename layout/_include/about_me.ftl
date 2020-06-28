@@ -53,7 +53,7 @@
             <#if settings.rss!true>
                 <span class="links-of-author-item scaleup">
                         <a href="${rss_url!}" target="_blank">
-                            <i class="fa fab fa-rss" style="color: #ff8956;">RSS</i>
+                            <i class="fa fab fa-rss" style="color: #ff8956;"><span>RSS</span></i>
                         </a>
                 </span>
             </#if>
