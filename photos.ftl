@@ -18,13 +18,14 @@
                     <section id="post" class="custom-page posts-expand">
                         <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/ImageGallery">
                             <#--图片盒子-->
-                            <div class="picbox">
+                            <div class="user-picbox picbox">
                                 <@photoTag method="list">
                                     <#list photos as photo>
                                         <div class="pics">
-                                            <a data-fancybox="images" href="${photo.url!}" data-caption="${photo.name!}">
-                                                <img class="lazy fancybox galleryImg" data-original="${photo.thumbnail!}"
-                                                     alt="${photo.name!}" itemprop="contentUrl" /></a>
+                                            <a data-fancybox="images" href="${photo.url!}" class="image">
+                                                <img class="user-gallery" data-original="${photo.thumbnail!}"
+                                                     src="${photo.thumbnail!}"
+                                                     alt="${photo.name!}" itemprop="contentUrl"/></a>
                                         </div>
                                     </#list>
                                 </@photoTag>

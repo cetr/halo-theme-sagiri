@@ -1,5 +1,8 @@
 <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        <#include "about_me.ftl">
+        <div class="sidebar-inner-top ">
+            <#include "about_me.ftl">
+        </div>
+        <#include "plugin.ftl">
     </div>
 </aside>

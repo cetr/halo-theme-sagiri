@@ -24,7 +24,9 @@
                 </li>
             </#list>
         </@menuTag>
-<#--        menu-item-icon fas fa-heartbeat-->
+<#--        <li class="menu-item nightModeBtn" id="nightModeBtn">-->
+<#--            <i class="fa fa-lightbulb-o"></i>-->
+<#--        </li>-->
         <li class="menu-item search">
             <form class="search-form"><input name="keyword" type="text" class="search-input" placeholder="站内搜索（暂未开放）">
                 <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>

@@ -73,7 +73,10 @@
                                 </header>
 
                                 <div class="post-body" itemprop="articleBody">
-                                    <p style="text-indent:2em;">${post.summary}</p>
+                                    <#if post.thumbnail?length gt 1>
+                                        <p><img alt="${post.title}" src="${post.thumbnail!}" class=""/></p>
+                                    </#if>
+                                    <p style="text-indent:2em;">${post.summary!}</p>
                                     <div class="post-button text-center">
                                         <a class="btn post-more-btn" href="${post.fullPath}" rel="contents">
                                             阅读全文 &raquo;

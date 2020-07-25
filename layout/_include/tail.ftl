@@ -31,10 +31,13 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/js/animate.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/js/backtotop.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/jquery.share.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/zoomify@0.2.5/dist/zoomify.min.js"></script>
+
 <script data-pjax src="${theme_base!}/source/js/normal.js"></script>
 <script data-pjax src="https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/js/prism.js"></script>
 <#if settings.pjax_enabled!false>
 <script type="text/javascript" src="${theme_base!}/source/js/pjax.js"></script>
 </#if>
+${settings.sagiri_plugin_js!}
 </body>
 </html>
