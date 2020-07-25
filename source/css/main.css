@@ -7205,8 +7205,8 @@ body {
 }
 
 .toc > ol > li:before {
-    /*content: counter(sectioncounter) ". ";*/
-    /*counter-increment: sectioncounter;*/
+    content: counter(sectioncounter) ". ";
+    counter-increment: sectioncounter;
 }
 
 .is-active-li,
