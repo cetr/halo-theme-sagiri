@@ -11,7 +11,7 @@
 
 ## 预览
 
-![screenshot.png](https://i.loli.net/2020/05/12/r1cDZ3iGFsfpPVk.png)
+![screenshot.png](https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/screenshot.png)
 
 
 
