@@ -78,7 +78,6 @@ const sagiri = {
                 }
 
                 $imageWrapLink.addClass('fancybox fancybox.image');
-                console.log($imageWrapLink)
                 $imageWrapLink.attr('rel', 'group');
 
                 if (imageTitle) {
