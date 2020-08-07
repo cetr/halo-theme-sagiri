@@ -2,7 +2,7 @@
 <h3 align="center">:cake: As lovely as sagiri</h3>
 
 <p align="center">
-  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://blog.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
+  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://blog.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#donate">支持作者</a>
   <br />
   <br />
     <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
@@ -50,6 +50,8 @@
 3. 用Halo的程序拉取 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
 > 感谢使用 halo-theme-sagiri 主题
 
+**更多个性化的配置请在 Sagiri 的主题设置中设置！**
+
 ## 更新日志
 
 见 [CHANGELOG](https://blog.tsxygfy.cn/s/changelog.html)
@@ -71,6 +73,14 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 - 推 pr
 
 如果你有一下建议，可以在 [issues](https://github.com/feiyangbeyond/halo-theme-sagiri/issues) 提出，也可以[联系我](https://blog.tsxygfy.cn)。
+
+# 捐赠
+
+> 给作者鼓励，请作者吃顿好的吧~ （无奈之举T·T）
+
+支付宝 | 微信
+------|------
+![Alipay](https://blog.tsxygfy.cn/upload/2020/08/alipay-317a5fddf7b8475db280e344c8e2a666.JPG)|![WeChatPay](https://blog.tsxygfy.cn/upload/2020/08/wechatpay-8528c22c11274c66b02f784c2eb4846f.JPG)
 
 ## 感谢
 
