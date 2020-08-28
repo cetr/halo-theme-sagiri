@@ -88,6 +88,8 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 
 - [弥枳](https://blog.coor.top)
 
+- [![jetbrains](https://www.jetbrains.com/favicon-32x32.png) jetbrains](https://www.jetbrains.com/?from=halo-theme-sagiri)
+
 ## License
 
 本项目全部遵循 GPL V3 开源许可，如需更改，使用相关代码请保留署名 / 相关链接。
