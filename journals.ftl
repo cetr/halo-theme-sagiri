@@ -36,7 +36,7 @@
                     </section>
 
                     <#if journals.totalPages gt 1>
-                        <@paginationTag method="index" page="${journals.number}" total="${journals.totalPages}" display="3">
+                        <@paginationTag method="journals" page="${journals.number}" total="${journals.totalPages}" display="3">
                             <#include "layout/_include/pagebar.ftl">
                         </@paginationTag>
                     </#if>
