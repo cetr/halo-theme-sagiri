@@ -137,8 +137,8 @@ style:
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
-other:
-  label: 其他设置
+plugin:
+  label: 插件设置
   items:
     pjax_enabled:
       name: pjax_enabled
@@ -207,3 +207,15 @@ other:
           label: 开启
         - value: false
           label: 关闭
+    sidebar_plugin:
+      name: sidebar_plugin
+      label: 自定义侧边栏插件
+      description: '会展示在侧边栏个人信息页的下方'
+      type: textarea
+      placeholder: '直接粘贴代码'
+    sagiri_plugin_js:
+      name: sidebar_plugin_js
+      label: 自定义侧边栏插件
+      description: '会展示在侧边栏个人信息页的下方'
+      type: textarea
+      placeholder: '直接粘贴代码'

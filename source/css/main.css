@@ -4,21 +4,22 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-html::-webkit-scrollbar-track-piece {
+::-webkit-scrollbar-track-piece {
     border-left: 1px solid #d2d2d2;
     background-color: #fef1f4;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     width: 8px;
     border: 1px solid #cbcbcb;
     background: #cbcbcb;
     border-radius: 5px;
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
     margin-right: 2px;
     width: 8px;
+    height: 8px;
 }
 
 body {
@@ -1588,7 +1589,7 @@ pre .javascript .function, pre .keyword {
 }
 
 .posts-expand .post-meta {
-    margin: 3px 0 60px 0;
+    margin: 3px 0 50px 0;
     color: #999;
     font-family: "PingFang SC", "Microsoft YaHei", Lato, sans-serif;
     font-size: 12px;
@@ -1940,9 +1941,23 @@ pre .javascript .function, pre .keyword {
 
 .sidebar-inner {
     position: relative;
-    padding: 20px 10px;
+    /*padding: 20px 10px;*/
     color: #999;
     text-align: center
+}
+.sidebar-info {
+    padding: 20px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #555;
+    background: #fff;
+    box-shadow: initial;
+    border-radius: initial;
+    border-radius: 5px;
+    z-index: 2;
+    max-height: calc(100vh - 153px);
+    overflow: auto;
+    scrollbar-width: none
 }
 
 .site-overview-wrap {
@@ -4031,15 +4046,21 @@ a {
 }
 
 .sidebar-inner {
-    padding: 20px 16px;
+    width: 100%;
+    color: #555;
+    z-index: 2
+}
+
+.sidebar-inner-top {
     box-sizing: border-box;
     width: 100%;
     color: #555;
-    background: #fff;
     box-shadow: initial;
     border-radius: initial;
     border-radius: 5px;
-    z-index: 2
+    z-index: 3;
+    background: #fff;
+    padding: 20px 16px;
 }
 
 .sidebar-inner.affix {
@@ -4048,6 +4069,13 @@ a {
     width: 300px
 }
 
+.sidebar-inner-plugin {
+    margin-top: 40px;
+    line-height: 1;
+}
+.sidebar-inner.affix-top {
+    background-color: #efefef;
+}
 .sidebar-inner.affix-bottom {
     position: fixed;
     top: 52px;
@@ -7161,19 +7189,19 @@ body {
 }
 
 .post-toc ol li {
-    color: #058ed2;
+    color: #666;
 }
 
 .post-toc ol li:hover {
-    color: #058ed2;
+    color: #666;
 }
 
 .post-toc ol a {
-    color: #058ed2;
+    color: #666;
 }
 
 .post-toc ol a:hover {
-    color: #058ed2;
+    color: #666;
 }
 
 .toc > ol > li:before {
@@ -7261,4 +7289,11 @@ body {
 }
 .galleryImg{
     display: inline !important;
+}
+.menu .menu-item.nightModeBtn {
+    float: right;
+    font-size: 18px;
+    width: 18px;
+    margin: 0;
+    margin-left: 20px;
 }

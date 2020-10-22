@@ -11,7 +11,7 @@
 
 ## 预览
 
-![screenshot.png](https://i.loli.net/2020/05/12/r1cDZ3iGFsfpPVk.png)
+![screenshot.png](https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/screenshot.png)
 
 
 - [fyang's blog](http://121.36.59.167:8090/)
@@ -51,6 +51,8 @@
 5. 点击下载，等待下载完成。（速度取决于您的服务器）
 > 感谢使用 halo-theme-sagiri 主题，求star！
 
+**更多个性化的配置请在 Sagiri 的主题设置中设置！**
+
 ## 更新日志
 
 见 [CHANGELOG](http://121.36.59.167:8090/s/changelog.html)
@@ -71,11 +73,21 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 
 如果你有一下建议，可以在 [issues](https://github.com/feiyangbeyond/halo-theme-sagiri/issues) 提出，也可以[联系我](https://blog.tsxygfy.cn)。
 
+# 捐赠
+
+> 给作者鼓励，请作者吃顿好的吧~ （无奈之举T·T）
+
+支付宝 | 微信
+------|------
+![Alipay](https://blog.tsxygfy.cn/upload/2020/08/alipay-317a5fddf7b8475db280e344c8e2a666.JPG)|![WeChatPay](https://blog.tsxygfy.cn/upload/2020/08/wechatpay-8528c22c11274c66b02f784c2eb4846f.JPG)
+
 ## 感谢
 
 - [DIYgod](https://diygod.me/)
 
 - [弥枳](https://blog.coor.top/)
+
+- [![jetbrains](https://www.jetbrains.com/favicon-32x32.png) jetbrains](https://www.jetbrains.com/?from=halo-theme-sagiri)
 
 ## License
 

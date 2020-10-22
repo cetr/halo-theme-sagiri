@@ -1,4 +1,6 @@
 $(function () {
-    sagiri.affix(700, 290);
-    sagiri.lazyload('img.lazy');
+    sagiri.affix(700, 130);
+    sagiri.lazyLoadPostsImages();
+    sagiri.wrapImageWithFancyBox()
+    sagiri.addPostImgZoomify()
 });
