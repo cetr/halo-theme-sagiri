@@ -2,7 +2,7 @@
 <h3 align="center">:cake: As lovely as sagiri</h3>
 
 <p align="center">
-  <a href="https://blog.tsxygfy.cn">预览</a> | <a href="#安装">安装</a> | <a href="https://blog.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
+  <a href="http://121.36.59.167:8090/">预览</a> | <a href="#安装">安装</a> | <a href="https://blog.tsxygfy.cn/s/changelog.html">更新日志</a> | <a href="#贡献">支持作者</a>
   <br />
   <br />
     <b>As lovely as sagiri, based on <a href="https://github.com/DIYgod/hexo-theme-sagiri">hexo-theme-sagiri</a></b></p>
@@ -14,8 +14,7 @@
 ![screenshot.png](https://i.loli.net/2020/05/12/r1cDZ3iGFsfpPVk.png)
 
 
-
-- [fyang's blog](https://blog.tsxygfy.cn)
+- [fyang's blog](http://121.36.59.167:8090/)
 - [弥枳'blog](https://blog.coor.top)
 - ···
 
@@ -45,21 +44,21 @@
 
 ## 安装
 
-1. 克隆或下载
-2. 压缩为 zip 压缩包之后在后台的主题设置直接上传即可使用。
-3. 用Halo的程序拉取 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
-> 感谢使用 halo-theme-sagiri 主题
+1. 进入博客后台-外观-主题-安装
+2. 选择远程拉取
+3. 仓库地址填写 [https://github.com/feiyangbeyond/halo-theme-sagiri.git](https://github.com/feiyangbeyond/halo-theme-sagiri.git)
+4. 选择开发版，master 分支（sagiri-cdn分支作为静态资源cdn使用，不是主题代码） 
+5. 点击下载，等待下载完成。（速度取决于您的服务器）
+> 感谢使用 halo-theme-sagiri 主题，求star！
 
 ## 更新日志
 
-见 [CHANGELOG](https://blog.tsxygfy.cn/s/changelog.html)
+见 [CHANGELOG](http://121.36.59.167:8090/s/changelog.html)
 
 ## 作者
 
 **halo-theme-sagiri** © [feiyangbeyond](https://github.com/feiyangbeyond), Released under the [GPL-3.0](./LICENSE) License.<br>
 Authored and maintained by [DIYgod](https://diygod.me) with help from contributors ([list](https://github.com/feiyangbeyond/halo-theme-sagiri/contributors)).
-
-> Blog [@fyang](https://blog.tsxygfy.cn) · GitHub [@feiyangbeyond](https://github.com/feiyangbeyond)
 
 ## 贡献
 
@@ -76,7 +75,7 @@ Authored and maintained by [DIYgod](https://diygod.me) with help from contributo
 
 - [DIYgod](https://diygod.me/)
 
-- [弥枳](https://blog.coor.top)
+- [弥枳](https://blog.coor.top/)
 
 ## License
 
