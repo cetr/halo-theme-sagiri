@@ -1,5 +1,5 @@
 <div class="site-brand-wrapper"
-     style="background-image:url(${settings.background_picture!'https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/image/header-sagiri.jpg'})">
+     style="background-image:url(${settings.background_picture!'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/header-sagiri.jpg'})">
     <div class="site-meta">
         <div class="custom-logo-site-title">
             <div class="brand">

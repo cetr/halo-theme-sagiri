@@ -1,7 +1,6 @@
 <#macro head title>
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="zh-CN">
 <head>
     <title>${title!}</title>
     <meta charset="utf-8">
@@ -38,17 +37,12 @@
     <link rel="alternate" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
 
     <@global.statistics />
+
     <#if settings.custom??>
     <style type="text/css">
         ${settings.custom!}
     </style>
     </#if>
-    <style type="text/css">
-        @font-face {
-            font-family: Candyshop;
-            src: url(https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
-        }
-    </style>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
     <#if settings.pjax_enabled!false>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -64,8 +58,6 @@
     <!-- require MetingJS -->
     <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
     </#if>
-
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh" class="theme-darling">
-
+<body itemscope itemtype="http://schema.org/WebPage" class="theme-darling">
 </#macro>

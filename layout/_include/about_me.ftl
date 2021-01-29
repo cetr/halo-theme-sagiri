@@ -4,7 +4,7 @@
              itemtype="http://schema.org/Person">
 
             <img class="site-author-image" itemprop="image"
-                 src="${settings.sitebar_img!'https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/image/card.jpg'}"
+                 src="${settings.sitebar_img!'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/card.jpg'}"
                  alt="${user.nickname!}"/>
 
             <p class="site-author-name" itemprop="name"><span

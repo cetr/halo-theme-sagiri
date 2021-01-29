@@ -24,11 +24,11 @@
                                 </div>
                                 <div class="post-block">
                                     <header class="post-header"></header>
-                                    <div class="post-body" itemprop="articleBody">
-                                        <div style="text-indent:2em;">${journal.content!}</div>
-                                    </div>
+                                    <div class="post-body" itemprop="articleBody">${journal.content!}</div>
                                     <footer class="post-footer">
-                                        <p style="float:right; font-style: italic">—— <a href="${blog_url!}" rel="external nofollow">${user.nickname}</a> ${journal.createTime?string('yyyy年MM月dd日')}</p>
+                                        <p style="float:right; font-style: italic">—— <a href="${blog_url!}"
+                                                                                         rel="external nofollow">${user.nickname}</a> ${journal.createTime?string('yyyy年MM月dd日')}
+                                        </p>
                                     </footer>
                                 </div>
                             </article>

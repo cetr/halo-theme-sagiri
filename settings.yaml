@@ -7,7 +7,7 @@ sns:
       name: nickname_prefix
       label: 昵称前缀
       type: text
-      default: '帅哥'
+      default: '网红'
     rss:
       name: rss
       label: RSS
