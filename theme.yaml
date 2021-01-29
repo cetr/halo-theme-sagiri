@@ -1,24 +1,11 @@
-#id: 主题的唯一标识
-#name: 主题名称
-#author:
-#  name: 作者名称
-#  website: 作者网站
-#description: 主题描述
-#logo: 主题 Logo
-#website: 主题网址
-#website: 主题的 Github 仓库
-#version: 版本号
-
-# 详情请参考：https://halo.run/develop/theme.html#theme-yaml
-
-id: feiyangbeyond_sagiri
+id: cetr_sagiri
 name: Sagiri
 author:
-  name: fyang
-  website: https://www.tsxygfy.cn
+  name: 知雨
+  website: https://blog.coor.top
 description: As lovely as sagiri. A theme for halo
 logo:
-website: https://github.com/feiyangbeyond/halo-theme-sagiri
-repo: https://github.com/feiyangbeyond/halo-theme-sagiri
-version: 1.3.0
-require: 1.3.0
+website: https://github.com/cetr/halo-theme-sagiri
+repo: https://github.com/cetr/halo-theme-sagiri
+version: 2.0.0
+require: 2.0.0

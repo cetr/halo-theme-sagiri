@@ -29,7 +29,7 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/css/prism.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/css/prism.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/zoomify@0.2.5/dist/zoomify.min.css" rel="stylesheet" type="text/css">
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
@@ -46,7 +46,7 @@
     <style type="text/css">
         @font-face {
             font-family: Candyshop;
-            src: url(https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
+            src: url(https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
         }
     </style>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
