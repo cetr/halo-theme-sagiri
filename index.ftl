@@ -19,7 +19,7 @@
                         <#list posts.content as post>
                             <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
                                 <div class="post-date">
-                                    <div class="post-month"> ${post.createTime?string('MM')}</div>
+                                    <div class="post-month"> ${post.createTime?string('MM')}月</div>
                                     <div class="post-day"> ${post.createTime?string('dd')}</div>
                                 </div>
                                 <#if (post.categories?size gt 0 )>

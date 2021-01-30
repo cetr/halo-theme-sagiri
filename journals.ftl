@@ -17,7 +17,7 @@
                         <#list journals.content as journal>
                             <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
                                 <div class="post-date">
-                                    <div class="post-month"> ${journal.createTime?string('MM')}</div>
+                                    <div class="post-month"> ${journal.createTime?string('MM')}月</div>
                                     <div class="post-day"> ${journal.createTime?string('dd')}</div>
                                 </div>
                                 <div class="post-block">

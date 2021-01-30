@@ -112,7 +112,7 @@ const sagiri = {
     // 对文章里的图片设置懒加载
     lazyLoadPostsImages: function () {
         $('#posts').find('img').lazyload({
-            placeholder: 'https://cdn.jsdelivr.net/gh/feiyangbeyond/halo-theme-sagiri@sagiri-cdn/image/JyLKoQ.gif',
+            placeholder: 'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/JyLKoQ.gif',
             effect: 'fadeIn',
             threshold: 0
         });
@@ -155,13 +155,23 @@ const sagiri = {
                 wechatQrcodeHelper: '<p>微信扫一扫，右上角分享</p>'
             })
         }
+    },
+    verifySearchForm: function () {
+        /**
+         * 验证搜索表单
+         */
+        var submit = document.querySelector(".search-form .search-submit");
+        var keyword = document.querySelector(".search-form input[name=keyword]");
+        $(submit).click(function () {
+            if ($(keyword).val() == "") return false;
+        });
     }
 }
 
 $(function () {
     sagiri.scrolldown();
-    // sagiri.nightMode();
     sagiri.operation_aplayer_lrc();
+    sagiri.verifySearchForm();
     $(window).scroll(function () {
         sagiri.operation_aplayer_lrc();
     });
