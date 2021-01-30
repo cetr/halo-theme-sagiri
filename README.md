@@ -3,7 +3,11 @@
     
 [![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri?icon=github)](https://github.com/cetr/halo-theme-sagiri)
 
+此主题移植于 DIYgod 大佬的个人博客，后续会优化各种细节，提供各种可自行修改配置
+
 ## 预览
+
+作者：[https://blog.coor.top](https://blog.coor.top)
 
 ![screenshot.png](./screenshot.png)
 
