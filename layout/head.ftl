@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 
-    <#include "cdn_css.ftl">
+    <#include "../cdn_css.ftl">
 
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
     <link href="${theme_base!}/source/css/codeblock.css" rel="stylesheet" type="text/css">

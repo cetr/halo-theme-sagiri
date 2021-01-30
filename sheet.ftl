@@ -1,15 +1,15 @@
-<#include "layout/_include/head.ftl">
+<#include "layout/head.ftl">
 <@head title="${sheet.title!} | ${blog_title!}"/>
 
 <div class="container sidebar-position-right page-home">
 
-    <#include "layout/_include/header.ftl">
-    <#include "layout/_include/header_inner.ftl">
-    <#include "layout/_include/navbar.ftl">
-    <#include "layout/_include/brand_wrapper.ftl">
-    <#include "layout/_include/master.ftl">
-    <#include "layout/_include/container_tail.ftl">
-    <#include "layout/_include/header_tail.ftl">
+    <#include "layout/header.ftl">
+    <#include "layout/header_inner.ftl">
+    <#include "layout/navbar.ftl">
+    <#include "layout/brand_wrapper.ftl">
+    <#include "layout/master.ftl">
+    <#include "layout/container_tail.ftl">
+    <#include "layout/header_tail.ftl">
 
     <main id="main" class="main">
         <div class="main-inner">
@@ -30,15 +30,17 @@
                         </article>
                     </section>
                 </div>
-                <div id="comments" class="comments">
-                    <#include "layout/comment.ftl">
-                    <@comment post=sheet type="sheet" />
-                </div>
+                <#if !post.disallowComment!false>
+                    <div id="comments" class="comments">
+                        <#include "layout/comment.ftl">
+                        <@comment post=sheet type="sheet" />
+                    </div>
+                </#if>
             </div>
-            <#include "layout/_include/sheet_directory.ftl">
+            <#include "layout/sheet_directory.ftl">
         </div>
     </main>
-    <#include "layout/_include/footer.ftl">
-    <#include "layout/_include/back_to_top.ftl">
-    <#include "layout/_include/container_tail.ftl">
-    <#include "layout/_include/tail.ftl">
+    <#include "layout/footer.ftl">
+    <#include "layout/back_to_top.ftl">
+    <#include "layout/container_tail.ftl">
+    <#include "layout/tail.ftl">

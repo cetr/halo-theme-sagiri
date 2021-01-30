@@ -5,7 +5,7 @@
                 <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li>
                 <li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li>
             </ul>
-            <#include "about_me.ftl">
+            <#include "../about_me.ftl">
             <#include "post_directory.ftl">
         </div>
     </div>
