@@ -1,6 +1,5 @@
 <#macro comment post,type>
     <div id="haloComment"></div>
-    <script src="//cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <script>
         if (!$('#haloComment')) {
             $('#' + '${post.id?c}').remove();

@@ -1,5 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js?v=${theme.version!}"
-        type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js?v=${theme.version!}"
         type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js?v=${theme.version!}"
