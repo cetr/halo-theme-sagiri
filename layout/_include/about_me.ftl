@@ -3,9 +3,8 @@
         <div class="site-author motion-element" itemprop="author" itemscope
              itemtype="http://schema.org/Person">
 
-            <img class="site-author-image" itemprop="image"
-                 src="${settings.sitebar_img!'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/card.jpg'}"
-                 alt="${user.nickname!}"/>
+            <img src="${settings.sitebar_img!'${theme_base!}/source/images/card.jpg'}"
+                 class="site-author-image" itemprop="image" alt="${user.nickname!}"/>
 
             <#if settings.nickname_prefix!=''>
                 <p class="site-author-name" itemprop="name">

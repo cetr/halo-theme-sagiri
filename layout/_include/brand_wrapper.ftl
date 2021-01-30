@@ -1,5 +1,5 @@
 <div class="site-brand-wrapper"
-     style="background-image:url(${settings.background_picture!'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/header-sagiri.jpg'})">
+     style="background-image:url(${settings.background_picture!'${theme_base!}/source/images/head.jpg'})">
     <div class="site-meta">
         <div class="custom-logo-site-title">
             <div class="brand">
@@ -25,7 +25,8 @@
                         <#list 1..title?length as index>
                             <span>
                                 <svg>
-                                    <text style="fill: ${settings.slogan_text_color!'#ff9800'}" id="stroke${title[index-1]}">${title[index-1]}</text>
+                                    <text style="fill: ${settings.slogan_text_color!'#ff9800'}"
+                                          id="stroke${title[index-1]}">${title[index-1]}</text>
                                 </svg>
                             </span>
                         </#list>
