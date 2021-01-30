@@ -124,6 +124,15 @@
                         $(this).addClass("active");
                         $('.des-of-author-des[data-index="'.concat(index, '"]')).addClass("active");
                     });
+                    $('pre').addClass('line-numbers').before($(
+                        '<figcaption class="line-numbers-head">' +
+                        '<div class="custom-carbon">' +
+                        '<div class="custom-carbon-dot custom-carbon-dot--red"></div>' +
+                        '<div class="custom-carbon-dot custom-carbon-dot--yellow"></div>' +
+                        '<div class="custom-carbon-dot custom-carbon-dot--green"></div>' +
+                        '</div>' +
+                        '</figcaption>'
+                    ));
                 </script>
             </div>
         </#if>

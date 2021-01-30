@@ -5,7 +5,7 @@
                 <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li>
                 <li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li>
             </ul>
-            <#include "../about_me.ftl">
+            <#include "about_me.ftl">
             <#include "post_directory.ftl">
         </div>
     </div>
@@ -28,14 +28,5 @@
             })
             $("#toc").children().length == 0 ? $("#toc").html("这篇文章没有目录~") : "";
         });
-        $('pre').addClass('line-numbers').before($(
-            '<figcaption class="line-numbers-head">' +
-            '<div class="custom-carbon">' +
-            '<div class="custom-carbon-dot custom-carbon-dot--red"></div>' +
-            '<div class="custom-carbon-dot custom-carbon-dot--yellow"></div>' +
-            '<div class="custom-carbon-dot custom-carbon-dot--green"></div>' +
-            '</div>' +
-            '</figcaption>'
-        ));
     </script>
 </aside>
