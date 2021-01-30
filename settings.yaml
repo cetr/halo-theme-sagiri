@@ -3,11 +3,6 @@
 sns:
   label: 社交资料
   items:
-    nickname_prefix:
-      name: nickname_prefix
-      label: 昵称前缀
-      type: text
-      default: '网红'
     rss:
       name: rss
       label: RSS
@@ -44,6 +39,86 @@ sns:
       label: Telegram
       type: text
       placeholder: '只需填入 Telegram Id 即可'
+sidebar:
+  label: 侧栏设置
+  items:
+    nickname_prefix:
+      name: nickname_prefix
+      label: 侧栏图片中昵称前缀
+      type: text
+      default: '网红'
+    sidebar_description:
+      name: sidebar_description
+      label: 侧栏中的一句话
+      type: text
+      default: '你能抓到我么？'
+    character_attribute:
+      name: character_attribute
+      label: 人物属性
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    character_attribute_height:
+      name: character_attribute_height
+      label: 人物属性高度
+      type: text
+      default: '120'
+      description: '设置完人物属性后根据自己需要高度调整，解决显示异常，单位为像素'
+    character_attribute_name_1:
+      name: character_attribute_name_1
+      label: 人物属性名称1
+      type: text
+      default: 'aa'
+    character_attribute_value_1:
+      name: character_attribute_value_1
+      label: 人物属性内容1
+      type: text
+      default: '11111111111111111111'
+    character_attribute_name_2:
+      name: character_attribute_name_2
+      label: 人物属性名称2
+      type: text
+      default: 'bb'
+    character_attribute_value_2:
+      name: character_attribute_value_2
+      label: 人物属性内容2
+      type: text
+      default: '2222222222222222222'
+    character_attribute_name_3:
+      name: character_attribute_name_3
+      label: 人物属性名称3
+      type: text
+      default: 'cc'
+    character_attribute_value_3:
+      name: character_attribute_value_3
+      label: 人物属性内容3
+      type: text
+      default: '33333333333333333'
+    character_attribute_name_4:
+      name: character_attribute_name_4
+      label: 人物属性名称4
+      type: text
+      default: 'dd'
+    character_attribute_value_4:
+      name: character_attribute_value_4
+      label: 人物属性内容4
+      type: text
+      default: '4444444444444444444'
+    character_attribute_name_5:
+      name: character_attribute_name_5
+      label: 人物属性名称5
+      type: text
+      default: 'ee'
+    character_attribute_value_5:
+      name: character_attribute_value_5
+      label: 人物属性内容5
+      type: text
+      default: '55555555555555555'
 style:
   label: 博客设置
   items:

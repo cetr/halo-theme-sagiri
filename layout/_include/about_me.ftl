@@ -7,10 +7,12 @@
                  src="${settings.sitebar_img!'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/card.jpg'}"
                  alt="${user.nickname!}"/>
 
-            <p class="site-author-name" itemprop="name"><span
-                        style="opacity:.2;">${settings.nickname_prefix!}</span>${user.nickname!}
-            </p>
-            <p class="site-description motion-element" itemprop="description">${user.description!}</p>
+            <#if settings.nickname_prefix!=''>
+                <p class="site-author-name" itemprop="name">
+                    <span style="opacity:.2;">${settings.nickname_prefix!}</span>${user.nickname!}
+                </p>
+            </#if>
+            <p class="site-description motion-element" itemprop="description">${settings.sidebar_description!}</p>
         </div>
 
         <div class="links-of-author motion-element">
@@ -36,9 +38,9 @@
                         </a>
                 </span>
             </#if>
-            <#if user.email??>
+            <#if settings.email??>
                 <span class="links-of-author-item scaleup">
-                        <a href="mailto:${user.email}" target="_blank">
+                        <a href="mailto:${settings.email}" target="_blank">
                             <i class="fa fab fa-envelope" style="color: #54bcff;"><span>Email</span></i>
                         </a>
                 </span>
@@ -58,6 +60,74 @@
                 </span>
             </#if>
         </div>
+
+        <#if settings.character_attribute!false>
+            <div class="des-of-author" style="height: ${settings.character_attribute_height!'120'}px">
+                <div class="des-of-author-nav">
+                    <#if settings.character_attribute_name_1!=''>
+                        <div class="des-of-author-title active" data-index="1">
+                            ${settings.character_attribute_name_1!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_name_2!=''>
+                        <div class="des-of-author-title" data-index="2">
+                            ${settings.character_attribute_name_2!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_name_3!=''>
+                        <div class="des-of-author-title" data-index="3">
+                            ${settings.character_attribute_name_3!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_name_4!=''>
+                        <div class="des-of-author-title" data-index="4">
+                            ${settings.character_attribute_name_4!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_name_5!=''>
+                        <div class="des-of-author-title" data-index="5">
+                            ${settings.character_attribute_name_5!}
+                        </div>
+                    </#if>
+                </div>
+                <div class="des-of-author-panel">
+                    <#if settings.character_attribute_value_1!=''>
+                        <div class="des-of-author-des active" data-index="1">
+                            ${settings.character_attribute_value_1!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_value_2!=''>
+                        <div class="des-of-author-des" data-index="2">
+                            ${settings.character_attribute_value_2!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_value_3!=''>
+                        <div class="des-of-author-des" data-index="3">
+                            ${settings.character_attribute_value_3!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_value_4!=''>
+                        <div class="des-of-author-des" data-index="4">
+                            ${settings.character_attribute_value_4!}
+                        </div>
+                    </#if>
+                    <#if settings.character_attribute_value_5!=''>
+                        <div class="des-of-author-des" data-index="5">
+                            ${settings.character_attribute_value_5!}
+                        </div>
+                    </#if>
+                </div>
+                <script>
+                    $(".des-of-author-title").click(function () {
+                        $(".des-of-author-title.active").removeClass("active");
+                        $(".des-of-author-des.active").removeClass("active");
+                        const index = $(this).data("index");
+                        $(this).addClass("active");
+                        $('.des-of-author-des[data-index="'.concat(index, '"]')).addClass("active");
+                    });
+                </script>
+            </div>
+        </#if>
 
         <details class="views-top-wrap">
             <summary class="views-top-name scaleup">看爆 Top5</summary>
