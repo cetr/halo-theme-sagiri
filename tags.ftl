@@ -1,14 +1,13 @@
 <#include "layout/head.ftl">
 <@head title="标签 | ${blog_title!}"/>
 <div class="container sidebar-position-right page-home">
-
-    <#include "layout/header.ftl">
-    <#include "layout/header_inner.ftl">
-    <#include "layout/navbar.ftl">
-    <#include "layout/brand_wrapper.ftl">
-    <#include "layout/master.ftl">
-    <#include "layout/container_tail.ftl">
-    <#include "layout/header_tail.ftl">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner">
+            <#include "layout/navbar.ftl">
+            <#include "layout/brand_wrapper.ftl">
+            <#include "layout/master.ftl">
+        </div>
+    </header>
     <main id="main" class="main">
         <div class="main-inner">
             <div class="content-wrap">
@@ -44,6 +43,6 @@
     </main>
     <#include "layout/footer.ftl">
     <#include "layout/back_to_top.ftl">
-    <#include "layout/container_tail.ftl">
-    <#include "layout/tail.ftl">
+</div>
+<#include "layout/tail.ftl">
 
