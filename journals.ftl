@@ -26,9 +26,12 @@
                                     <header class="post-header"></header>
                                     <div class="post-body" itemprop="articleBody">${journal.content!}</div>
                                     <footer class="post-footer">
-                                        <p style="float:right; font-style: italic">—— <a href="${blog_url!}"
-                                                                                         rel="external nofollow">${user.nickname}</a> ${journal.createTime?string('yyyy年MM月dd日')}
-                                        </p>
+                                        <div style="height: 28px">
+                                            <p style="float:right; font-style: italic">
+                                                ${user.nickname}
+                                                ${journal.createTime?string('yyyy年MM月dd日')}
+                                            </p>
+                                        </div>
                                     </footer>
                                 </div>
                             </article>
@@ -40,14 +43,6 @@
                             <#include "layout/_include/pagebar.ftl">
                         </@paginationTag>
                     </#if>
-                </div>
-            </div>
-
-            <div class="sidebar-toggle">
-                <div class="sidebar-toggle-line-wrap">
-                    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-                    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-                    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
                 </div>
             </div>
 

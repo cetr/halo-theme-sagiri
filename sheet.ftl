@@ -35,16 +35,6 @@
                     <@comment post=sheet type="sheet" />
                 </div>
             </div>
-
-
-            <div class="sidebar-toggle">
-                <div class="sidebar-toggle-line-wrap">
-                    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-                    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-                    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-                </div>
-            </div>
-
             <#include "layout/_include/sheet_directory.ftl">
         </div>
     </main>

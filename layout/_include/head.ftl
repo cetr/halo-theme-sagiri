@@ -28,10 +28,10 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/css/prism.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/zoomify@0.2.5/dist/zoomify.min.css" rel="stylesheet" type="text/css">
     <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
+    <link href="${theme_base!}/source/css/codeblock.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
     <link rel="alternate" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
