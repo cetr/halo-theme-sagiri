@@ -119,52 +119,9 @@ sidebar:
       label: 人物属性内容5
       type: text
       default: '55555555555555555'
-style:
-  label: 博客设置
+body:
+  label: 主体设置
   items:
-    hitokoto:
-      name: hitokoto
-      label: 博客描述开启一言
-      type: radio
-      data-type: bool
-      default: false
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
-    hitokoto_type:
-      name: hitokoto_type
-      label: 一言句子类型（开启一言后）
-      type: select
-      default: 'a'
-      options:
-        - value: ''
-          label: '随机'
-        - value: 'a'
-          label: '动画'
-        - value: 'b'
-          label: '漫画'
-        - value: 'c'
-          label: '游戏'
-        - value: 'd'
-          label: '文学'
-        - value: 'e'
-          label: '原创'
-        - value: 'f'
-          label: '来自网络'
-        - value: 'g'
-          label: '其他'
-        - value: 'h'
-          label: '影视'
-        - value: 'i'
-          label: '诗词'
-        - value: 'j'
-          label: '网易云'
-        - value: 'k'
-          label: '哲学'
-        - value: 'l'
-          label: '抖机灵'
     background_picture:
       name: background_picture
       label: body背景图片
@@ -197,6 +154,9 @@ style:
           label: 开启
         - value: false
           label: 关闭
+foot:
+  label: 底部设置
+  items:
     blog_ran_time:
       name: blog_ran_time
       label: '站点运行时间统计'
@@ -207,11 +167,6 @@ style:
       label: 'ICP 备案号'
       type: text
       placeholder: '填入 ICP 备案号，没有则不填. '
-    custom:
-      name: custom
-      label: 自定义样式
-      type: textarea
-      placeholder: '不需要 <style></style> 标签'
 plugin:
   label: 插件设置
   items:
@@ -221,7 +176,7 @@ plugin:
       description: '如果开启了背景音乐建议开启 pjax'
       type: radio
       data-type: bool
-      default: false
+      default: true
       options:
         - value: true
           label: 开启
@@ -232,7 +187,7 @@ plugin:
       label: 开启背景音乐
       type: radio
       data-type: bool
-      default: false
+      default: true
       options:
         - value: true
           label: 开启
@@ -257,10 +212,10 @@ plugin:
     list_id:
       name: list_id
       label: 音乐播放器歌单ID
-      placeholder: '歌单ID'
-      description: '播放歌单默认为网易云音乐热歌榜'
-      default: '3778678'
       type: text
+      placeholder: '歌单ID'
+      default: '3778678'
+      description: '播放歌单默认为网易云音乐热歌榜'
     sort_by:
       name: sort_by
       label: 歌单排序方式
@@ -282,3 +237,11 @@ plugin:
           label: 开启
         - value: false
           label: 关闭
+other:
+  label: 其他设置
+  items:
+    custom:
+      name: custom
+      label: 自定义样式
+      type: textarea
+      placeholder: '不需要 <style></style> 标签'
