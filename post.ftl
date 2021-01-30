@@ -48,19 +48,14 @@
                                                 ${post.createTime?string('yyyy-MM-dd')}
                                             </time>
                                         </span>
-                                        <#if (post.tags?size gt 0 )>
-                                            <span class="post-tags">
+                                        <span class="post-wordcount">
                                             <span class="post-meta-divider">•</span>
-                                            <span class="post-meta-item-icon"><i class="fa fa-tag"></i></span>
-
-                                            <#list post.tags as tag>
-                                                <a href="${tag.fullPath}" itemprop="url" rel="index">
-                                                       <span title="标签">${tag.name}</span>
-                                                </a>
-                                            </#list>
+                                            <span class="post-meta-item-icon">
+                                                <i class="far fa-file-word"></i>
+                                            </span>
+                                            <span class="post-meta-item-text">字数统计</span>
+                                            <span title="字数统计">${post.wordCount?c}</span>
                                         </span>
-                                        </#if>
-
                                         <span class="leancloud_visitors" style="color:#ff3f1a">
                                             <span class="post-meta-divider">•</span>
                                             <span class="post-meta-item-icon"><i class="far fa-eye"></i></span>

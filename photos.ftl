@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <#include "layout/_include/custom_sidebar.ftl">
+            <#include "layout/_include/sheet_directory.ftl">
         </div>
     </main>
     <#include "layout/_include/footer.ftl">

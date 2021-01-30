@@ -8,25 +8,25 @@
             <#include "about_me.ftl">
             <#include "post_directory.ftl">
         </div>
-        <#include "plugin.ftl">
     </div>
     <script>
-        $(function() {
+        $(function () {
             sagiri.postToc();
             sagiri.postShare();
-            $('#about-me').css('display','none').css('opacity', '1');
+            $('#about-me').css('display', 'none').css('opacity', '1');
             $('.sidebar-nav-toc').click(function () {
                 $(this).addClass('sidebar-nav-active');
                 $('.sidebar-nav-overview').removeClass('sidebar-nav-active');
-                $('#about-me').attr('class', 'site-overview-wrap sidebar-panel').css('display','none').css('opacity', '0');
-                $('#post-directory').attr('class', 'post-toc-wrap motion-element sidebar-panel sidebar-panel-active').css('display','block').css('opacity', '1');
+                $('#about-me').attr('class', 'site-overview-wrap sidebar-panel').css('display', 'none').css('opacity', '0');
+                $('#post-directory').attr('class', 'post-toc-wrap motion-element sidebar-panel sidebar-panel-active').css('display', 'block').css('opacity', '1');
             });
             $('.sidebar-nav-overview').click(function () {
                 $(this).addClass('sidebar-nav-active');
                 $('.sidebar-nav-toc').removeClass('sidebar-nav-active');
-                $('#about-me').attr('class', 'site-overview-wrap sidebar-panel sidebar-panel-active').css('display','block').css('opacity', '1');
-                $('#post-directory').attr('class', 'post-toc-wrap motion-element sidebar-panel').css('display','none').css('opacity', '0');
+                $('#about-me').attr('class', 'site-overview-wrap sidebar-panel sidebar-panel-active').css('display', 'block').css('opacity', '1');
+                $('#post-directory').attr('class', 'post-toc-wrap motion-element sidebar-panel').css('display', 'none').css('opacity', '0');
             })
+            $("#toc").children().length == 0 ? $("#toc").html("这篇文章没有目录~") : "";
         });
     </script>
 </aside>
