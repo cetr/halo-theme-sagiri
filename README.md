@@ -11,10 +11,6 @@
 
 ![screenshot.png](./screenshot.png)
 
-## 功能
-
-接下来几天会对各方面细节进行优化并发布版本，敬请期待 留言时间：2021年1月29日
-
 ## 安装
 
 #### 压缩包上传方式（推荐）
@@ -53,8 +49,3 @@
 ## 感谢
 
 - [DIYgod](https://diygod.me)
-
-## License
-
-本项目全部遵循 GPL V3 开源许可，如需更改，使用相关代码请保留署名 / 相关链接。
-http://www.gnu.org/licenses/gpl-3.0.html
