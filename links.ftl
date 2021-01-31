@@ -19,33 +19,70 @@
                                 <h1 class="post-title" itemprop="name headline">友链</h1>
                             </header>
                             <div class="post-body">
-                                <div class="links">
-                                    <@linkTag method="listTeams">
-                                        <#list teams as item>
-                                            <#if item.team?? && item.team!=''>
-                                                <h3 style="width: 100%; margin: 10px;">${item.team}</h3>
-                                            </#if>
-                                            <ul>
-                                                <#list item.links?sort_by('priority') as link>
-                                                    <li>
-                                                        <a href="${link.url!}" target="_blank" rel="external">
-                                                            <#if link.logo?? && link.logo?length gt 0>
-                                                                <img class="no-fancybox" src="${link.logo!}">
-                                                            <#else >
-                                                                <img class="no-fancybox" src="${link.url}/favicon.ico">
-                                                            </#if>
-                                                            <h4>${link.name!}</h4>
-                                                            <#if link.description?length gt 0>
-                                                                <p>${link.description}</p>
-                                                            <#else><p>这个家伙很懒，什么也没留下~</p>
-                                                            </#if>
-                                                        </a>
-                                                    </li>
+                                <#if settings.links_grouping!false>
+                                    <div class="links-body">
+                                        <#if settings.links_random!false>
+                                            <#assign methodVal_grouping = 'listTeamsByRandom' />
+                                        <#else>
+                                            <#assign methodVal_grouping = 'listTeams' />
+                                        </#if>
+                                        <div class="links">
+                                            <@linkTag method=methodVal_grouping>
+                                                <#list teams as item>
+                                                    <#if item.team??>
+                                                        <#if item.team?? && item.team!=''>
+                                                            <h3 style="margin: 10px">${item.team}</h3>
+                                                        </#if>
+                                                        <ul>
+                                                            <#list item.links as link>
+                                                                <li>
+                                                                    <a href="${link.url!}" target="_blank"
+                                                                       rel="external">
+                                                                        <img class="lazy lazyImg"
+                                                                             data-original="${link.logo}">
+                                                                        <h4>${link.name!}</h4>
+                                                                        <#if link.description!=''>
+                                                                            <p>${link.description}</p>
+                                                                        <#else>
+                                                                            <p>这个家伙很懒，什么也没留下</p>
+                                                                        </#if>
+                                                                    </a>
+                                                                </li>
+                                                            </#list>
+                                                        </ul>
+                                                    </#if>
                                                 </#list>
-                                            </ul>
-                                        </#list>
-                                    </@linkTag>
-                                </div>
+                                            </@linkTag>
+                                        </div>
+                                    </div>
+                                <#else>
+                                    <div class="links">
+                                        <ul>
+                                            <#if settings.links_random!false>
+                                                <#assign methodVal = 'listByRandom' />
+                                            <#else>
+                                                <#assign methodVal = 'list' />
+                                            </#if>
+                                            <@linkTag method=methodVal>
+                                                <#if links?? && links?size gt 0>
+                                                    <#list links as link>
+                                                        <li>
+                                                            <a href="${link.url!}" target="_blank" rel="external">
+                                                                <img class="no-fancybox" data-original="${link.logo}">
+                                                                <h4>${link.name!}</h4>
+                                                                <#if link.description!=''>
+                                                                    <p>${link.description}</p>
+                                                                <#else>
+                                                                    <p>这个家伙很懒，什么也没留下</p>
+                                                                </#if>
+                                                            </a>
+                                                        </li>
+                                                    </#list>
+                                                </#if>
+                                            </@linkTag>
+                                        </ul>
+                                    </div>
+                                </#if>
                             </div>
                         </div>
                     </div>

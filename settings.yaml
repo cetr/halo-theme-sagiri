@@ -1,5 +1,3 @@
-# configurations
-# 详情请参考：https://halo.run/develop/theme.html#settings-yaml
 sns:
   label: 社交资料
   items:
@@ -145,7 +143,7 @@ body:
       type: attachment
     evanyou:
       name: evanyou
-      label: evanyou线条
+      label: evanyou线条背景
       type: radio
       data-type: bool
       default: true
@@ -167,6 +165,31 @@ foot:
       label: 'ICP 备案号'
       type: text
       placeholder: '填入 ICP 备案号，没有则不填. '
+links:
+  label: 友链页设置
+  items:
+    links_grouping:
+      name: links_grouping
+      label: 友链分组
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    links_random:
+      name: links_random
+      label: 友链顺序随机
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 plugin:
   label: 插件设置
   items:
