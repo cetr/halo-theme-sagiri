@@ -12,12 +12,10 @@
         <div class="main-inner">
             <div class="content-wrap">
                 <div id="content" class="content">
-
                     <div class="post-block archive post">
-
                         <div id="posts" class="posts-collapse">
                             <div class="category-all-page">
-                                <div class="category-all-title">分类列表</div>
+                                <div class="category-all-title">分类</div>
                                 <div class="category-all">
                                     <ul class="category-list">
                                         <@categoryTag method="list">

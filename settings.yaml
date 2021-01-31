@@ -166,6 +166,20 @@ foot:
       label: 'ICP 备案号'
       type: text
       placeholder: '填入 ICP 备案号，没有则不填. '
+archives:
+  label: 归档页设置
+  items:
+    archives_include_categories:
+      name: archives_include_categories
+      label: '是否包含分类'
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 links:
   label: 友链页设置
   items:
