@@ -3,12 +3,13 @@
         <div class="site-author motion-element" itemprop="author" itemscope
              itemtype="http://schema.org/Person">
 
-            <img src="${settings.sitebar_img!'${theme_base!}/source/images/card.jpg'}"
-                 class="site-author-image" itemprop="image" alt="${user.nickname!}"/>
+            <img src="${settings.sitebar_img!'${theme_base!}/source/images/card.jpg'}" class="site-author-image"
+                 itemprop="image" alt="${user.nickname!}"/>
 
-            <#if settings.nickname_prefix!=''>
+            <#if settings.sidebar_nickname_isopen!false>
                 <p class="site-author-name" itemprop="name">
-                    <span style="opacity:.2;">${settings.nickname_prefix!}</span>${user.nickname!}
+                    <span style="opacity:.2;">${settings.sidebar_nickname_prefix!}</span>
+                    ${settings.sidebar_nickname!'${user.nickname}'}
                 </p>
             </#if>
             <p class="site-description motion-element" itemprop="description">${settings.sidebar_description!}</p>

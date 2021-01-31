@@ -40,11 +40,27 @@ sns:
 sidebar:
   label: 侧栏设置
   items:
-    nickname_prefix:
-      name: nickname_prefix
-      label: 侧栏图片中昵称前缀
+    sidebar_nickname_isopen:
+      name: sidebar_nickname_isopen
+      label: 开启侧栏图片内的文字
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    sidebar_nickname_prefix:
+      name: sidebar_nickname_prefix
+      label: 侧栏图片内的文字前缀
       type: text
       default: '网红'
+    sidebar_nickname:
+      name: sidebar_nickname
+      label: 侧栏图片内的昵称
+      type: text
+      description: '为空时默认使用后台 用户-个人资料 里设置的昵称'
     sidebar_description:
       name: sidebar_description
       label: 侧栏中的一句话
