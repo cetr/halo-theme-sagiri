@@ -1,31 +1,21 @@
 const animatedText = document.getElementById('animate');
 const animatedTextStroke = document.getElementById('animate-stroke');
 const guideText = document.getElementById('guide');
-
-// select the spans in in the guide
 const guideSpans = guideText.getElementsByTagName('span');
-
-// select the spans in in the guide
 const animatedSpans = animatedText.getElementsByTagName('span');
 const animatedSpansStroke = animatedTextStroke.getElementsByTagName('span');
-
 const textLength = guideSpans.length;
 
 const placeSpans = () => {
-    // for each span in the guide
     for (var i = 0; i < textLength; i++) {
         let guide = guideSpans[i];
         let animated = animatedSpans[i];
         let animatedStroke = animatedSpansStroke[i];
-        // get the guide client rect
         let rect = guide.getBoundingClientRect();
-        // set the left property of the animate
-        // span to rect.left
         animated.style.left = rect.left + 'px';
         animatedStroke.style.left = rect.left + 'px';
     }
 }
-
 
 const animateLetterIn = (i) => {
     setTimeout(() => {
@@ -34,19 +24,12 @@ const animateLetterIn = (i) => {
         TweenLite.fromTo(animatedSpansStroke[i], 0.4, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: Power3.easeOut });
         TweenLite.fromTo(animatedSpansStroke[i], 0.4, { scale: 0 }, { scale: 1, ease: Back.easeOut });
     }, i * 200);
-
-    // if (i === textLength - 1) {
-    //   setTimeout(() => {
-    //     animateOut();
-    //   }, (textLength + 3) * 200);
-    // }
 }
 
 const animateLetterOut = (i) => {
     setTimeout(() => {
         TweenLite.to(animatedSpans[i], 0.4, { opacity: 0, y: 40, scale: 0, ease: Power3.easeIn });
     }, i * 200);
-
     if (i === textLength - 1) {
         setTimeout(() => {
             animateIn();
@@ -66,7 +49,6 @@ const animateOut = () => {
     }
 }
 
-// just to make sure the text will fit the window width
 const resizeText = (text, fontSize) => {
     text.style.fontSize = fontSize + 'px';
     text.style.height = fontSize + 'px';

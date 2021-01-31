@@ -130,6 +130,7 @@ body:
       type: text
       default: ''
       placeholder: '默认为博客标题'
+      description: '建议使用英文，因为字体库只支持英文字母及英文标点符号'
     slogan_text_color:
       name: slogan_text_color
       label: slogan字体颜色
