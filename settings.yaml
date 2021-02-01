@@ -87,52 +87,52 @@ sidebar:
       name: character_attribute_name_1
       label: 人物属性名称1
       type: text
-      default: 'aa'
+      default: '最喜欢的作品'
     character_attribute_value_1:
       name: character_attribute_value_1
       label: 人物属性内容1
       type: text
-      default: '11111111111111111111'
+      default: '这是一段示例文案，111，111，111，请您按照自己需要展示的内容进行修改'
     character_attribute_name_2:
       name: character_attribute_name_2
       label: 人物属性名称2
       type: text
-      default: 'bb'
+      default: '最喜欢的游戏'
     character_attribute_value_2:
       name: character_attribute_value_2
       label: 人物属性内容2
       type: text
-      default: '2222222222222222222'
+      default: '这是一段示例文案，222，222，222，请您按照自己需要展示的内容进行修改'
     character_attribute_name_3:
       name: character_attribute_name_3
       label: 人物属性名称3
       type: text
-      default: 'cc'
+      default: '最喜欢的音乐'
     character_attribute_value_3:
       name: character_attribute_value_3
       label: 人物属性内容3
       type: text
-      default: '33333333333333333'
+      default: '这是一段示例文案，333，333，333，请您按照自己需要展示的内容进行修改'
     character_attribute_name_4:
       name: character_attribute_name_4
       label: 人物属性名称4
       type: text
-      default: 'dd'
+      default: '最喜欢的图书'
     character_attribute_value_4:
       name: character_attribute_value_4
       label: 人物属性内容4
       type: text
-      default: '4444444444444444444'
+      default: '这是一段示例文案，444，444，444，请您按照自己需要展示的内容进行修改'
     character_attribute_name_5:
       name: character_attribute_name_5
       label: 人物属性名称5
       type: text
-      default: 'ee'
+      default: '最喜欢的动漫'
     character_attribute_value_5:
       name: character_attribute_value_5
       label: 人物属性内容5
       type: text
-      default: '55555555555555555'
+      default: '这是一段示例文案，555，555，555，请您按照自己需要展示的内容进行修改'
 body:
   label: 主体设置
   items:
