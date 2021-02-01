@@ -1,6 +1,8 @@
 const sagiri = {
-    // 目录
     postToc: function () {
+        /**
+         * 初始化目录
+         */
         var headerEl = 'h1,h2,h3,h4,h5,h6';
         tocbot.init({
             tocSelector: '#toc',
@@ -13,9 +15,10 @@ const sagiri = {
             hasInnerContainers: false
         });
     },
-    // 点击
     scrolldown: function () {
-        //滚动到第二屏
+        /**
+         * 点击滚动效果
+         */
         $('.scrolldown_b').on('click', function () {
             $('.container').velocity('scroll', {
                 offset: $('#header').height() - 60
@@ -27,17 +30,20 @@ const sagiri = {
             });
         });
     },
-    // 悬浮
-    affix: function (topMax, bottomMax) {
+    affix: function (topMax) {
+        /**
+         * 悬浮
+         */
         $('.sidebar-inner').affix({
             offset: {
-                top: topMax,
-                bottom: bottomMax
+                top: topMax
             }
         })
     },
-    // 站点运行时间
     blogRanTime: function (now, start) {
+        /**
+         * 站点运行时间
+         */
         var n = new Date(start);
         now.setTime(now.getTime() + 250), days = (now - n) / 1e3 / 60 / 60 / 24, dnum = Math.floor(days), hours = (now - n) /
             1e3 / 60 / 60 - 24 * dnum, hnum = Math.floor(hours), 1 == String(hnum).length && (hnum = "0" + hnum), minutes =
@@ -46,12 +52,14 @@ const sagiri = {
         1 == String(snum).length && (snum = "0" + snum), document.getElementById("timeDate").innerHTML = "站点已萌萌哒运行 " +
             dnum + " 天 ", document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"
     },
-    // 歌词
     operation_aplayer_lrc: function () {
+        /**
+         * 优化页脚歌词与页脚文章重叠
+         */
         var scrollTop = $(window).scrollTop();
         var scrollHeight = $(document).height();
         var windowHeight = $(window).height();
-        if ($('.aplayer-lrc').hasClass('aplayer-lrc-hide')) {
+        if ($('.aplayer-fixed .aplayer-lrc').hasClass('aplayer-lrc-hide')) {
             return;
         }
         if (scrollTop + windowHeight >= scrollHeight - 20) {
@@ -60,8 +68,10 @@ const sagiri = {
             $('.aplayer-fixed .aplayer-lrc').show();
         }
     },
-    // 包装图片 fancybox 图库页面
     wrapImageWithFancyBox: function () {
+        /**
+         * 包装图片 fancybox 图库页面
+         */
         $('.user-picbox img')
             .not('[hidden]')
             .not('.no-fancybox')
@@ -96,8 +106,10 @@ const sagiri = {
             }
         });
     },
-    // 图片放大
     addPostImgZoomify: function () {
+        /**
+         * 图片放大
+         */
         $('.content img')
             .not('[hidden]')
             .not('.no-fancybox')
@@ -109,16 +121,20 @@ const sagiri = {
                 $(this).zoomify()
             })
     },
-    // 对文章里的图片设置懒加载
-    lazyLoadPostsImages: function () {
+    lazyLoadPostsImages: function (placeholder) {
+        /**
+         * 对文章里的图片设置懒加载
+         */
         $('#posts').find('img').lazyload({
-            placeholder: 'https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/image/JyLKoQ.gif',
+            placeholder: placeholder,
             effect: 'fadeIn',
             threshold: 0
         });
     },
-    // 夜间模式
     nightMode: function () {
+        /**
+         * 夜间模式
+         */
         var nightModeBtn = $("#nightModeBtn i");
         $("#nightModeBtn").click(function (e) {
             if (nightModeBtn.hasClass("fa-moon-o")) {
@@ -132,8 +148,10 @@ const sagiri = {
             }
         })
     },
-    // pjax 之后的动画
     scrollAfterPjax: function (timeout) {
+        /**
+         * pjax 之后的动画
+         */
         setTimeout(() => {
             if ($(window).width() < 991) {
                 $('.container').velocity('scroll', {
@@ -146,8 +164,10 @@ const sagiri = {
             }
         }, timeout);
     },
-    // 分享文章
     postShare: function () {
+        /**
+         * 分享文章
+         */
         if ($('.post-share').length) {
             $('.post-share').share({
                 disabled: ['tencent', 'douban', 'linkedin', 'diandian', 'facebook', 'google'],

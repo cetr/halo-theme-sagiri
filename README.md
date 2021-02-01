@@ -1,7 +1,8 @@
 <h1 align="center">Sagiri</h1>
 <h3 align="center">As lovely as sagiri</h3>
     
-[![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri?icon=github)](https://github.com/cetr/halo-theme-sagiri)
+[![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri)](https://github.com/cetr/halo-theme-sagiri)
+[![release](https://img.shields.io/github/v/release/cetr/halo-theme-sagiri.svg?style=flat-square)](https://github.com/cetr/halo-theme-sagiri)
 
 此主题移植于 DIYgod 大佬的个人博客，后续会优化各种细节，提供各种可自行修改配置
 

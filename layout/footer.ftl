@@ -15,8 +15,9 @@
                 <a href="https://beian.miit.gov.cn" target="_blank">${settings.icp!}</a><br>
             </#if>
         </p>
-        <#-- 以下信息，请不要修改或删除，谢谢！-->
-        <p>Proudly published with <a href="https://halo.run" target="_blank" class="external" rel="nofollow">Halo</a> ·
+        <#-- 以下为版权信息，请尽量不要修改或删除，谢谢！-->
+        <p>
+            由 <a href="https://halo.run" target="_blank" class="external" rel="nofollow">Halo</a> 强力驱动 ·
             Theme by <a href="https://blog.coor.top" target="_blank" class="external" rel="nofollow">知雨</a> ·
             <a href="${sitemap_html_url!}" target="_blank" class="external" rel="nofollow">站点地图</a>
         </p>
