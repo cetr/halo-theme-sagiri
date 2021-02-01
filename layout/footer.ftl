@@ -2,7 +2,9 @@
     <div class="footer-inner">
         <@global.footer />
         <#if settings.blog_ran_time??>
-            <p><span id="timeDate"></span><span id="times"></span></p>
+            <p>
+                <span id="timeDate">站点已萌萌哒运行 00 天 </span><span id="times">00 小时 00 分 00 秒</span><span class="my-face">(●'◡'●)ﾉ♥</span>
+            </p>
             <script>
                 $(function () {
                     setInterval("sagiri.blogRanTime(new Date, '${settings.blog_ran_time!}')", 250);

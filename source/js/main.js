@@ -1,3 +1,5 @@
+'use strict';
+
 const sagiri = {
     postToc: function () {
         /**
@@ -45,6 +47,7 @@ const sagiri = {
          * 站点运行时间
          */
         var n = new Date(start);
+        var days = 0, dnum = 0, hours = 0, hnum = 0, minutes = 0, mnum = 0, seconds = 0, snum = 0;
         now.setTime(now.getTime() + 250), days = (now - n) / 1e3 / 60 / 60 / 24, dnum = Math.floor(days), hours = (now - n) /
             1e3 / 60 / 60 - 24 * dnum, hnum = Math.floor(hours), 1 == String(hnum).length && (hnum = "0" + hnum), minutes =
             (now - n) / 1e3 / 60 - 1440 * dnum - 60 * hnum, mnum = Math.floor(minutes), 1 == String(mnum).length && (mnum =
