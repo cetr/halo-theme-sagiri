@@ -294,6 +294,16 @@ plugin:
 other:
   label: 其他设置
   items:
+    back_to_top:
+      name: back_to_top
+      label: 返回顶部样式
+      type: select
+      default: cat
+      options:
+        - value: cat
+          label: 小猫
+        - value: iron_man
+          label: 钢铁侠
     custom:
       name: custom
       label: 自定义样式

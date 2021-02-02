@@ -4311,7 +4311,6 @@ a {
     z-index: 2;
     width: 70px;
     height: 900px;
-    background: url(../images/scroll.png);
     transition: all .5s ease-in-out;
     opacity: 1
 }
@@ -4348,7 +4347,6 @@ a {
     margin: 10px 0;
     color: rgba(0, 0, 0, .5);
     border-radius: 4px;
-    /*min-height: 120px*/
 }
 
 .des-of-author-nav {
