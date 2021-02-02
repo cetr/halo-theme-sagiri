@@ -19,8 +19,10 @@
         </p>
         <#-- 以下为版权信息，请尽量不要修改或删除，谢谢！-->
         <p>
-            由 <a href="https://halo.run" target="_blank" class="external" rel="nofollow">Halo</a> 强力驱动 ·
-            Theme by <a href="https://blog.coor.top" target="_blank" class="external" rel="nofollow">知雨</a> ·
+            由 <a href="https://halo.run" target="_blank" class="external" rel="nofollow">Halo</a> 强力驱动 · Theme by
+            <a href="https://github.com/cetr/halo-theme-sagiri" target="_blank" class="external" rel="nofollow">
+                Sagiri
+            </a> ·
             <a href="${sitemap_html_url!}" target="_blank" class="external" rel="nofollow">站点地图</a>
         </p>
     </div>
