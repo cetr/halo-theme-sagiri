@@ -40,7 +40,6 @@
 
 <script src="${theme_base!}/source/js/main.js?v=${theme.version!}" type="text/javascript"></script>
 <script src="${theme_base!}/source/js/animate.js?v=${theme.version!}" type="text/javascript"></script>
-<script src="${theme_base!}/source/js/backtotop.js?v=${theme.version!}" type="text/javascript"></script>
-<script data-pjax src="${theme_base!}/source/js/normal.js?v=${theme.version!}" type="text/javascript"></script>
+<script data-pjax src="${theme_base!}/source/js/pjax_run.js?v=${theme.version!}" type="text/javascript"></script>
 </body>
 </html>

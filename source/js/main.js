@@ -42,6 +42,27 @@ const sagiri = {
             }
         })
     },
+    back_to_top: function () {
+        $.scrollto = function (scrolldom, scrolltime) {
+            $(scrolldom).click(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+                $('html, body').animate({
+                    scrollTop: $('body').offset().top
+                }, scrolltime);
+                return false;
+            });
+        };
+        var backTo = $(".back-to-top");
+        var backHeight = $(window).height() - 980 + 'px';
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 700 && backTo.css('top') === '-900px') {
+                backTo.css('top', backHeight);
+            } else if ($(window).scrollTop() <= 700 && backTo.css('top') !== '-900px') {
+                backTo.css('top', '-900px');
+            }
+        });
+        $.scrollto(".back-to-top", 800);
+    },
     blogRanTime: function (now, start) {
         /**
          * 站点运行时间
@@ -193,6 +214,7 @@ const sagiri = {
 
 $(function () {
     sagiri.scrolldown();
+    sagiri.back_to_top();
     sagiri.operation_aplayer_lrc();
     sagiri.verifySearchForm();
     $(window).scroll(function () {
