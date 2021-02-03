@@ -33,8 +33,8 @@
 
     <#include "cdn_css.ftl">
 
-    <link href="${theme_base!}/source/css/main.css" rel="stylesheet" type="text/css">
-    <link href="${theme_base!}/source/css/codeblock.css" rel="stylesheet" type="text/css">
+    <link href="${theme_base!}/source/css/main.css?v=${theme.version!}" rel="stylesheet" type="text/css">
+    <link href="${theme_base!}/source/css/codeblock.css?v=${theme.version!}" rel="stylesheet" type="text/css">
 
     <@global.statistics />
 

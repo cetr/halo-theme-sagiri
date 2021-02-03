@@ -11,5 +11,5 @@
 <link href="https://cdn.jsdelivr.net/npm/zoomify@0.2.5/dist/zoomify.min.css?v=${theme.version!}"
       rel="stylesheet" type="text/css">
 
-<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=${theme.version!}"
       rel="stylesheet" type="text/css" media="screen">

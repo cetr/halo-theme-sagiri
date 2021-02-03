@@ -35,7 +35,7 @@
         type="text/javascript"></script>
 
 <#if settings.pjax_enabled!false>
-    <script type="text/javascript" src="${theme_base!}/source/js/pjax.js"></script>
+    <script src="${theme_base!}/source/js/pjax.js?v=${theme.version!}" type="text/javascript"></script>
 </#if>
 
 <script src="${theme_base!}/source/js/main.js?v=${theme.version!}" type="text/javascript"></script>
