@@ -10,7 +10,7 @@
 
 作者：[https://blog.coor.top](https://blog.coor.top)
 
-![screenshot.png](./screenshot.png)
+![screenshot.png](https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@latest/screenshot.png)
 
 ## 安装
 
