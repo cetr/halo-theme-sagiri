@@ -4,7 +4,7 @@
 [![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri)](https://github.com/cetr/halo-theme-sagiri)
 [![release](https://img.shields.io/github/v/release/cetr/halo-theme-sagiri.svg?style=flat-square)](https://github.com/cetr/halo-theme-sagiri)
 
-此主题移植于 DIYgod 大佬的个人博客，后续会优化各种细节，提供各种可自行修改配置
+此主题移植于 DIYgod 大佬的个人博客，已提供多种可自行修改的设置
 
 ## 预览
 
@@ -16,7 +16,7 @@
 
 #### 压缩包上传方式（推荐）
 
-1. 下载zip压缩包到本地 [点击下载](https://github.com/cetr/halo-theme-sagiri/archive/master.zip)
+1. 下载最新发行版zip压缩包到本地 [点击前往](https://github.com/cetr/halo-theme-sagiri/releases)
 2. 进入博客后台-外观-主题-安装
 3. 选择本地上传，将压缩包上传上去
 4. 等待提示安装完成
