@@ -62,7 +62,7 @@
         </div>
 
         <#if settings.character_attribute!false>
-            <div class="des-of-author" style="height: ${settings.character_attribute_height!'120'}px">
+            <div class="des-of-author" style="min-height: ${settings.character_attribute_height!}px">
                 <div class="des-of-author-nav">
                     <#if settings.character_attribute_name_1!=''>
                         <div class="des-of-author-title active" data-index="1">

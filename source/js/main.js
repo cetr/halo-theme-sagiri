@@ -32,15 +32,17 @@ const sagiri = {
             });
         });
     },
-    affix: function (topMax) {
+    affix: function (obj) {
         /**
-         * 悬浮
+         * affix定位
          */
-        $('.sidebar-inner').affix({
-            offset: {
-                top: topMax
-            }
-        })
+        $(obj).each(function (i, n) {
+            $(n).affix({
+                offset: {
+                    top: $(n).data('affixval')
+                }
+            });
+        });
     },
     back_to_top: function () {
         $.scrollto = function (scrolldom, scrolltime) {
