@@ -12,7 +12,9 @@
                     ${settings.sidebar_nickname!'${user.nickname}'}
                 </p>
             </#if>
-            <p class="site-description motion-element" itemprop="description">${settings.sidebar_description!}</p>
+            <p class="site-description motion-element" itemprop="description">
+                ${settings.sidebar_description!'你能抓到我么？'}
+            </p>
         </div>
 
         <div class="links-of-author motion-element">
@@ -62,7 +64,7 @@
         </div>
 
         <#if settings.character_attribute!false>
-            <div class="des-of-author" style="min-height: ${settings.character_attribute_height!}px">
+            <div class="des-of-author" style="min-height: ${settings.character_attribute_height!'120'}px">
                 <div class="des-of-author-nav">
                     <#if settings.character_attribute_name_1!=''>
                         <div class="des-of-author-title active" data-index="1">

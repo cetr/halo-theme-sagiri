@@ -65,7 +65,7 @@ sidebar:
       name: sidebar_description
       label: 侧栏中的一句话
       type: text
-      default: '你能抓到我么？'
+      placeholder: '你能抓到我么？'
     character_attribute:
       name: character_attribute
       label: 人物属性
@@ -81,7 +81,7 @@ sidebar:
       name: character_attribute_height
       label: 人物属性高度
       type: text
-      default: '120'
+      placeholder: '120'
       description: '设置完人物属性后根据自己需要高度调整，解决显示异常，单位为像素'
     character_attribute_name_1:
       name: character_attribute_name_1
@@ -221,6 +221,15 @@ links:
           label: 开启
         - value: false
           label: 关闭
+comment:
+  label: 评论设置
+  items:
+    comment_internal_plugin_js:
+      name: comment_internal_plugin_js
+      label: 评论模块JS
+      type: text
+      placeholder: '如果使用默认样式这里可以不填'
+      description: '评论js请在这里设置，系统设置里的js在本主题不生效'
 plugin:
   label: 插件设置
   items:
@@ -268,8 +277,7 @@ plugin:
       label: 音乐播放器歌单ID
       type: text
       placeholder: '歌单ID'
-      default: '3778678'
-      description: '播放歌单默认为网易云音乐热歌榜'
+      placeholder: '默认为网易云音乐热歌榜'
     sort_by:
       name: sort_by
       label: 歌单排序方式

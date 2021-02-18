@@ -32,6 +32,10 @@
                                         </div>
                                     </footer>
                                 </div>
+                                <details>
+                                    <summary>展开评论</summary>
+                                    <halo-comment id="${journal.id?c}" type="journal"/>
+                                </details>
                             </article>
                         </#list>
                     </section>

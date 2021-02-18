@@ -31,7 +31,7 @@
 
 <#include "cdn_js.ftl">
 
-<script src="${options.comment_internal_plugin_js!'//cdn.jsdelivr.net/gh/halo-dev/halo-comment@latest/dist/halo-comment.min.js'}"
+<script src="${settings.comment_internal_plugin_js!'https://cdn.jsdelivr.net/gh/cetr/halo-comment-yu@latest/dist/halo-comment.min.js'}?v=${theme.version!}"
         type="text/javascript"></script>
 
 <#if settings.pjax_enabled!false>
