@@ -28,13 +28,7 @@
 3. 远程地址填写 `https://github.com/cetr/halo-theme-sagiri.git`
 5. 点击下载，等待下载完成
 
-## 修改评论模块样式
-
-1. 进入Halo博客后台 -> 系统 -> 博客设置 -> 评论设置
-2. 将 评论模块 JS 修改为：https://cdn.jsdelivr.net/gh/cetr/halo-comment-yu@latest/dist/halo-comment.min.js
-3. 保存
-
-**更多个性化的配置请在 Sagiri 的主题设置中设置！**
+**主题个性化的配置请在 Sagiri 的主题设置中设置！**
 
 ## 贡献
 
