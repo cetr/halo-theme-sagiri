@@ -8,7 +8,7 @@
 
 ## 预览
 
-作者：[https://blog.coor.top](https://blog.coor.top)
+作者：[https://coor.top](https://coor.top)
 
 ![screenshot.png](https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@latest/screenshot.png)
 
