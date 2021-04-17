@@ -4,13 +4,17 @@
 [![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri)](https://github.com/cetr/halo-theme-sagiri)
 [![release](https://img.shields.io/github/v/release/cetr/halo-theme-sagiri.svg?style=flat-square)](https://github.com/cetr/halo-theme-sagiri)
 
-此主题移植于 DIYgod 大佬的个人博客，已提供多种可自行修改的设置
-
 ## 预览
 
 作者：[https://coor.top](https://coor.top)
 
 ![screenshot.png](https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@latest/screenshot.png)
+
+## 注意
+
+请不要再问我为什么你下载该主题后和作者的展示的不一样，我在这里统一说下，这里开源的是 Sagiri 主题的基础版本，作者的是私有的完整版本，完整版不进行开源
+
+另外说一下，两个版本的源码及结构是不一样的，所以开源版本有什么 Bug 的话请告知我，我将进行优化，不然我不知道
 
 ## 安装
 
@@ -40,7 +44,3 @@
 - 推 pr
 
 如果你有一下建议，可以在 [issues](https://github.com/cetr/halo-theme-sagiri/issues) 提出
-
-## 感谢
-
-- [DIYgod](https://diygod.me)
