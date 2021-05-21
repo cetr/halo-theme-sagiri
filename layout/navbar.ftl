@@ -1,6 +1,6 @@
 <nav class="site-nav">
     <ul id="menu" class="menu">
-        <@menuTag method="tree" team="">
+        <@menuTag method="tree">
             <#list menus?sort_by('priority') as menu>
                 <li class="menu-item">
                     <#if menu.children?? && menu.children?size gt 0>
