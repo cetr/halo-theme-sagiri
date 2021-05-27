@@ -1,5 +1,6 @@
 <footer id="footer" class="footer">
     <div class="footer-inner">
+        <@global.statistics />
         <@global.footer />
         <#if settings.blog_ran_time??>
             <p>
