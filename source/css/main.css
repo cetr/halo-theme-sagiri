@@ -2203,16 +2203,16 @@ pre .javascript .function, pre .keyword {
 }
 
 .post-toc-wrap {
-    overflow: hidden
+    overflow: hidden;
+    max-height: calc(100vh - 242px);
 }
 
 .post-toc {
-    overflow: auto
+    overflow: auto;
 }
 
 .post-toc ol {
     margin: 0;
-    padding: 0 2px 5px 10px;
     text-align: left;
     list-style: none;
     font-size: 14px
@@ -4062,7 +4062,6 @@ a {
     width: 100%;
     color: #555;
     box-shadow: initial;
-    border-radius: initial;
     border-radius: 5px;
     z-index: 3;
     background: #fff;
@@ -4072,7 +4071,9 @@ a {
 .sidebar-inner.affix {
     position: fixed;
     top: 52px;
-    width: 300px
+    width: 300px;
+    max-height: calc(100vh - 173px);
+    border-radius: 5px;
 }
 
 .sidebar-inner-plugin {
@@ -7191,7 +7192,16 @@ body {
 .toc > ol {
     list-style-type: none;
     counter-reset: sectioncounter;
-    width: 200px;
+    overflow: auto !important;
+    max-height: calc(100vh - 222px);
+    position: unset !important;
+    scrollbar-width: none;
+}
+
+.toc > ol::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
 }
 
 .post-toc ol li {
