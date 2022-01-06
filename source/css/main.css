@@ -7279,20 +7279,19 @@ body {
 
 /*photos*/
 .picbox {
-    margin: 10px;
-    column-count: 3;
+    column-count: 4;
     column-gap: 10px;
 }
 
 @media screen and (max-width: 900px) {
     .picbox {
-        column-count: 2;
+        column-count: 3;
     }
 }
 
 @media screen and (max-width: 560px) {
     .picbox {
-        column-count: 1;
+        column-count: 2;
     }
 }
 
@@ -7303,9 +7302,7 @@ body {
 .pics img {
     width: 100%;
     height: 100%;
-    border: 1px solid #dadefb;
     border-radius: 3px;
-    padding: .2rem;
 }
 
 .galleryImg {
