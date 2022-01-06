@@ -63,82 +63,82 @@
             </#if>
         </div>
 
-        <#if settings.character_attribute!false>
-            <div class="des-of-author" style="min-height: ${settings.character_attribute_height!'120'}px">
+        <#if settings.sidebar_key1?? && settings.sidebar_value1??>
+            <div class="des-of-author">
                 <div class="des-of-author-nav">
-                    <#if settings.character_attribute_name_1!=''>
-                        <div class="des-of-author-title active" data-index="1">
-                            ${settings.character_attribute_name_1!}
-                        </div>
-                    </#if>
-                    <#if settings.character_attribute_name_2!=''>
+                    <div class="des-of-author-title active" data-index="1">
+                        ${settings.sidebar_key1!}
+                    </div>
+                    <#if settings.sidebar_key2?? && settings.sidebar_value2??>
                         <div class="des-of-author-title" data-index="2">
-                            ${settings.character_attribute_name_2!}
+                            ${settings.sidebar_key2!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_name_3!=''>
+                    <#if settings.sidebar_key3?? && settings.sidebar_value3??>
                         <div class="des-of-author-title" data-index="3">
-                            ${settings.character_attribute_name_3!}
+                            ${settings.sidebar_key3!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_name_4!=''>
+                    <#if settings.sidebar_key4?? && settings.sidebar_value4??>
                         <div class="des-of-author-title" data-index="4">
-                            ${settings.character_attribute_name_4!}
+                            ${settings.sidebar_key4!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_name_5!=''>
+                    <#if settings.sidebar_key5?? && settings.sidebar_value5??>
                         <div class="des-of-author-title" data-index="5">
-                            ${settings.character_attribute_name_5!}
+                            ${settings.sidebar_key5!}
                         </div>
                     </#if>
                 </div>
                 <div class="des-of-author-panel">
-                    <#if settings.character_attribute_value_1!=''>
-                        <div class="des-of-author-des active" data-index="1">
-                            ${settings.character_attribute_value_1!}
-                        </div>
-                    </#if>
-                    <#if settings.character_attribute_value_2!=''>
+                    <div class="des-of-author-des active" data-index="1">
+                        ${settings.sidebar_value1!}
+                    </div>
+                    <#if settings.sidebar_key2?? && settings.sidebar_value2??>
                         <div class="des-of-author-des" data-index="2">
-                            ${settings.character_attribute_value_2!}
+                            ${settings.sidebar_value2!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_value_3!=''>
+                    <#if settings.sidebar_key3?? && settings.sidebar_value3??>
                         <div class="des-of-author-des" data-index="3">
-                            ${settings.character_attribute_value_3!}
+                            ${settings.sidebar_value3!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_value_4!=''>
+                    <#if settings.sidebar_key4?? && settings.sidebar_value4??>
                         <div class="des-of-author-des" data-index="4">
-                            ${settings.character_attribute_value_4!}
+                            ${settings.sidebar_value4!}
                         </div>
                     </#if>
-                    <#if settings.character_attribute_value_5!=''>
+                    <#if settings.sidebar_key5?? && settings.sidebar_value5??>
                         <div class="des-of-author-des" data-index="5">
-                            ${settings.character_attribute_value_5!}
+                            ${settings.sidebar_value5!}
                         </div>
                     </#if>
                 </div>
-                <script>
-                    $(".des-of-author-title").click(function () {
-                        $(".des-of-author-title.active").removeClass("active");
-                        $(".des-of-author-des.active").removeClass("active");
-                        const index = $(this).data("index");
-                        $(this).addClass("active");
-                        $('.des-of-author-des[data-index="'.concat(index, '"]')).addClass("active");
-                    });
-                    $('pre').addClass('line-numbers').before($(
-                        '<figcaption class="line-numbers-head">' +
-                        '<div class="custom-carbon">' +
-                        '<div class="custom-carbon-dot custom-carbon-dot--red"></div>' +
-                        '<div class="custom-carbon-dot custom-carbon-dot--yellow"></div>' +
-                        '<div class="custom-carbon-dot custom-carbon-dot--green"></div>' +
-                        '</div>' +
-                        '</figcaption>'
-                    ));
-                </script>
+                <div style="clear: both"></div>
             </div>
         </#if>
+
+        <div>
+            <script>
+                $(".des-of-author-title").click(function () {
+                    $(".des-of-author-title.active").removeClass("active");
+                    $(".des-of-author-des.active").removeClass("active");
+                    const index = $(this).data("index");
+                    $(this).addClass("active");
+                    $('.des-of-author-des[data-index="'.concat(index, '"]')).addClass("active");
+                });
+                $('pre').addClass('line-numbers').before($(
+                    '<figcaption class="line-numbers-head">' +
+                    '<div class="custom-carbon">' +
+                    '<div class="custom-carbon-dot custom-carbon-dot--red"></div>' +
+                    '<div class="custom-carbon-dot custom-carbon-dot--yellow"></div>' +
+                    '<div class="custom-carbon-dot custom-carbon-dot--green"></div>' +
+                    '</div>' +
+                    '</figcaption>'
+                ));
+            </script>
+        </div>
 
         <details class="views-top-wrap">
             <summary class="views-top-name scaleup">看爆 Top5</summary>

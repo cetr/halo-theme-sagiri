@@ -2020,8 +2020,7 @@ pre .javascript .function, pre .keyword {
     margin: 0 auto;
     padding: 2px;
     max-width: 120px;
-    height: auto;
-    border: 1px solid #eee
+    height: auto
 }
 
 .site-author-name {
@@ -4111,7 +4110,6 @@ a {
 .site-author-image {
     max-width: none;
     width: 100%;
-    border: none;
     padding: 0
 }
 
