@@ -162,12 +162,15 @@ const sagiri = {
          * 夜间模式
          */
         var nightModeBtn = $("#nightModeBtn i");
+        var siteBrandWrapper = $(".site-brand-wrapper");
         $("#nightModeBtn").click(function (e) {
             if (nightModeBtn.hasClass("fa-moon-o")) {
+                siteBrandWrapper.css("background-image", "url(" + nightModeBtn.data("background-picture") + ")");
                 nightModeBtn.addClass("fa-lightbulb-o");
                 nightModeBtn.removeClass("fa-moon-o");
                 $("body").removeClass("nightMode");
             } else if (nightModeBtn.hasClass("fa-lightbulb-o")) {
+                siteBrandWrapper.css("background-image", "url(" + nightModeBtn.data("background-picture-night") + ")");
                 nightModeBtn.addClass("fa-moon-o");
                 nightModeBtn.removeClass("fa-lightbulb-o");
                 $("body").addClass("nightMode");
@@ -215,6 +218,7 @@ const sagiri = {
 }
 
 $(function () {
+    sagiri.nightMode();
     sagiri.scrolldown();
     sagiri.back_to_top();
     sagiri.operation_aplayer_lrc();
