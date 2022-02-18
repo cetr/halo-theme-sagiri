@@ -126,6 +126,10 @@ body:
       name: background_picture
       label: body背景图片
       type: attachment
+    background_picture_night:
+      name: background_picture_night
+      label: 暗色模式body背景图片
+      type: attachment
     slogan_text:
       name: slogan_text
       label: slogan

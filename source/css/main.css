@@ -3846,14 +3846,15 @@ a {
     position: relative;
     box-sizing: border-box;
     padding: 0 12px;
-    line-height: inherit;
+    line-height: initial;
     transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     color: #fff;
     font-size: 15px;
-    border-bottom: none
+    border-bottom: none;
+    margin-top: 18px
 }
 
 @media (max-width: 991px) {
@@ -4081,13 +4082,13 @@ a {
 }
 
 .sidebar-inner.affix-top {
-    background-color: #efefef;
+    opacity: 1
 }
 
 .sidebar-inner.affix-bottom {
     position: fixed;
     top: 52px;
-    width: 300px;
+    width: 300px
 }
 
 .site-overview {
@@ -7133,6 +7134,7 @@ body {
     color: #444;
     text-shadow: none;
     font-size: 14px;
+    margin: 0;
 }
 
 .menu-item:hover div {
@@ -7309,10 +7311,9 @@ body {
 
 .menu .menu-item.nightModeBtn {
     float: right;
-    font-size: 18px;
+    font-size: 19px;
     width: 18px;
-    margin: 0;
-    margin-left: 20px;
+    margin: -2px 0 0 20px;
 }
 
 @font-face {
