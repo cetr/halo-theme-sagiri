@@ -8,7 +8,7 @@
 
             <#if settings.sidebar_nickname_isopen!false>
                 <p class="site-author-name" itemprop="name">
-                    <span style="opacity:.2;">${settings.sidebar_nickname_prefix!}</span>
+                    <span style="opacity:.3;">${settings.sidebar_nickname_prefix!}</span>
                     ${settings.sidebar_nickname!'${user.nickname}'}
                 </p>
             </#if>

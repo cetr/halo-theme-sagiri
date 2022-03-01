@@ -164,15 +164,15 @@ const sagiri = {
         var nightModeBtn = $("#nightModeBtn i");
         var siteBrandWrapper = $(".site-brand-wrapper");
         $("#nightModeBtn").click(function (e) {
-            if (nightModeBtn.hasClass("fa-moon-o")) {
+            if (nightModeBtn.hasClass("fa-moon")) {
                 siteBrandWrapper.css("background-image", "url(" + nightModeBtn.data("background-picture") + ")");
-                nightModeBtn.addClass("fa-lightbulb-o");
-                nightModeBtn.removeClass("fa-moon-o");
+                nightModeBtn.addClass("fa-lightbulb");
+                nightModeBtn.removeClass("fa-moon");
                 $("body").removeClass("nightMode");
-            } else if (nightModeBtn.hasClass("fa-lightbulb-o")) {
+            } else if (nightModeBtn.hasClass("fa-lightbulb")) {
                 siteBrandWrapper.css("background-image", "url(" + nightModeBtn.data("background-picture-night") + ")");
-                nightModeBtn.addClass("fa-moon-o");
-                nightModeBtn.removeClass("fa-lightbulb-o");
+                nightModeBtn.addClass("fa-moon");
+                nightModeBtn.removeClass("fa-lightbulb");
                 $("body").addClass("nightMode");
             }
         })

@@ -44,7 +44,7 @@
                                         <div class="post-meta">
                                             <span class="post-time" style="color: #00a7e0">
                                                 <span class="post-meta-item-icon"><i
-                                                            class="fa fa-calendar-o"></i></span>
+                                                            class="fa fa-calendar"></i></span>
                                                 <span class="post-meta-item-text">发表于</span>
                                                 <time title="Post created" itemprop="dateCreated datePublished"
                                                       datetime="${post.createTime}">

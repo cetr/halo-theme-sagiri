@@ -7309,14 +7309,7 @@ body {
     display: inline !important;
 }
 
-.menu .menu-item.nightModeBtn {
-    float: right;
-    font-size: 19px;
-    width: 18px;
-    margin: -2px 0 0 20px;
-}
-
 @font-face {
     font-family: Candyshop;
-    src: url(https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@sagiri-cdn/font/Candyshop.otf)
+    src: url(../font/Candyshop.otf)
 }

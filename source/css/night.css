@@ -54,7 +54,7 @@
     color: #bec3c9
 }
 
-.nightMode .views-top a {
+.nightMode .views-top a:hover {
     color: #bec3c9
 }
 
@@ -80,7 +80,7 @@
 }
 
 .nightMode .menu-item .navbar-dropdown .nav-child:hover {
-    background-color: #535353;
+    background-color: #535353
 }
 
 .nightMode .pagination .page-number.current {
@@ -95,7 +95,7 @@
 }
 
 .nightMode .pagination .page-number:hover {
-    background: #535353;
+    background: #535353
 }
 
 .nightMode .pagination .extend {
@@ -104,6 +104,13 @@
 
 .nightMode .menu-item .navbar-dropdown a:hover {
     background: 0
+}
+
+.menu .menu-item.nightModeBtn {
+    float: right;
+    font-size: 19px;
+    width: 18px;
+    margin: -2px 0 0 20px;
 }
 
 .nightMode .backtop-icon {
@@ -115,7 +122,7 @@
 }
 
 .nightMode .comments {
-    background-color: #efefef
+    background-color: #1A1A1A
 }
 
 .nightMode .post-meta span, .nightMode .post-meta time {
@@ -135,6 +142,10 @@
 }
 
 .nightMode .sidebar-nav .sidebar-nav-active, .nightMode .sidebar-nav li:hover {
+    color: #d8d8d8
+}
+
+.nightMode .sidebar-nav .sidebar-nav-active {
     color: #d8d8d8;
     border-bottom-color: #d8d8d8
 }
@@ -145,4 +156,8 @@
 
 .nightMode .back-to-top .back-to-top-btn {
     color: #888
+}
+
+.nightMode .post-nav-item a:hover {
+    color: #bec3c9
 }

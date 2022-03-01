@@ -24,11 +24,13 @@
                 </li>
             </#list>
         </@menuTag>
-        <li class="menu-item nightModeBtn" id="nightModeBtn">
-            <i class="fa fa-lightbulb-o"
-               data-background-picture-night="${settings.background_picture_night!'${theme_base!}/source/images/head.jpg'}"
-               data-background-picture="${settings.background_picture!'${theme_base!}/source/images/head.jpg'}"></i>
-        </li>
+        <#if settings.night_mode_enabled!false>
+            <li class="menu-item nightModeBtn" id="nightModeBtn">
+                <i class="fa fa-lightbulb"
+                   data-background-picture-night="${settings.background_picture_night!'${theme_base!}/source/images/head_night.jpeg'}"
+                   data-background-picture="${settings.background_picture!'${theme_base!}/source/images/head.jpg'}"></i>
+            </li>
+        </#if>
         <li class="menu-item search">
             <form class="search-form" action="${blog_url!}/search">
                 <input name="keyword" type="text" autocomplete="off" class="search-input" placeholder="站内搜索">
