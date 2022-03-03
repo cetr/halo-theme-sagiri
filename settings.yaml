@@ -222,12 +222,17 @@ links:
 comment:
   label: 评论设置
   items:
-    comment_internal_plugin_js:
-      name: comment_internal_plugin_js
-      label: 评论模块JS
-      type: text
-      default: 'https://cdn.jsdelivr.net/gh/cetr/halo-comment-yu@latest/dist/halo-comment.min.js'
-      description: '评论js请在这里设置，系统里设置的js在本主题不生效'
+    comment_internal_plugin_js_enable:
+      name: comment_internal_plugin_js_enable
+      label: 使用系统设置评论模块JS
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 plugin:
   label: 插件设置
   items:
@@ -315,3 +320,14 @@ other:
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
+    night_mode_enabled:
+      name: night_mode_enabled
+      label: 开启黑夜模式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭

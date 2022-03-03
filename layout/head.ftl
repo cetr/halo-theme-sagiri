@@ -25,28 +25,21 @@
 
     <@global.head />
 
-    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="alternate" title="RSS" type="application/rss+xml" href="${rss_url!}">
     <link rel="alternate" title="ATOM" type="application/atom+xml" href="${atom_url!}">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 
-    <#include "cdn_css.ftl">
-
-    <link href="${theme_base!}/source/css/main.css?v=${theme.version!}" rel="stylesheet" type="text/css">
-    <link href="${theme_base!}/source/css/night.css?v=${theme.version!}" rel="stylesheet" type="text/css">
-    <link href="${theme_base!}/source/css/codeblock.css?v=${theme.version!}" rel="stylesheet" type="text/css">
+    <#include "css.ftl">
 
     <#if settings.custom??>
-        <style type="text/css">
+        <style>
             ${settings.custom!}
         </style>
     </#if>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js?v=${theme.version!}"
-            type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js?v=${theme.version!}"
-            type="text/javascript"></script>
+    <script src="${theme_base!}/source/lib/jquery/jquery.min.js?v=${theme.version!}" type="text/javascript"></script>
+    <script src="${theme_base!}/source/lib/vue/vue.min.js?v=${theme.version!}" type="text/javascript"></script>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
+<body>
 </#macro>
