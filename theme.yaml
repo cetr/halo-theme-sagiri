@@ -3,9 +3,9 @@ name: Sagiri
 author:
   name: 知雨
   website: https://coor.top
-description: As lovely as sagiri. A theme for halo
+description: As lovely as sagiri
 logo:
 website: https://github.com/cetr/halo-theme-sagiri
 repo: https://github.com/cetr/halo-theme-sagiri
-version: 2.2.2
+version: 2.2.3
 require: 1.4.0
