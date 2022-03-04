@@ -3808,7 +3808,6 @@ a {
 }
 
 .menu {
-    margin-top: 0;
     margin: 0 auto;
     width: 95%;
     max-width: 1280px;
@@ -3846,7 +3845,7 @@ a {
     position: relative;
     box-sizing: border-box;
     padding: 0 12px;
-    line-height: initial;
+    line-height: inherit;
     transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
@@ -3854,7 +3853,6 @@ a {
     color: #fff;
     font-size: 15px;
     border-bottom: none;
-    margin-top: 18px
 }
 
 @media (max-width: 991px) {
