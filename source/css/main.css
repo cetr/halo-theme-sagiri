@@ -3981,6 +3981,7 @@ a {
     height: 100px;
     border-radius: 100%;
     border: 2px dashed #fff;
+    object-fit: cover;
     padding: 5px
 }
 

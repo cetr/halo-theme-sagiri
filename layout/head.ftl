@@ -21,14 +21,13 @@
     <meta name="theme-name" content="${theme.name!}">
     <meta name="theme-version" content="${theme.version!}">
     <meta name="theme-repo" content="${theme.repo!}">
-    <meta name="theme-author-url" content="blog.coor.top">
 
     <@global.head />
 
     <link rel="alternate" title="RSS" type="application/rss+xml" href="${rss_url!}">
     <link rel="alternate" title="ATOM" type="application/atom+xml" href="${atom_url!}">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="${blog_url!}/avatar">
+    <link rel="icon" type="image/png" sizes="32x32" href="${blog_url!}/favicon.ico">
 
     <#include "css.ftl">
 
