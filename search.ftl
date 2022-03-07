@@ -16,6 +16,10 @@
 
                     <section id="posts" class="posts-expand">
 
+                        <article class="post post-search-header">
+                            以下是包含关键字 <span style="color: #ff3f1a;">${keyword}</span> 的文章：
+                        </article>
+
                         <#list posts.content as post>
                             <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
                                 <div class="post-date">
