@@ -1,20 +1,9 @@
 <h1 align="center">Sagiri</h1>
     
-[![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri)](https://github.com/cetr/halo-theme-sagiri)
-[![release](https://img.shields.io/github/v/release/cetr/halo-theme-sagiri.svg?style=flat-square)](https://github.com/cetr/halo-theme-sagiri)
+[![stars](https://flat.badgen.net/github/stars/cetr/halo-theme-sagiri)](https://github.com/cetr/halo-theme-sagiri) [![release](https://img.shields.io/github/v/release/cetr/halo-theme-sagiri.svg?style=flat-square)](https://github.com/cetr/halo-theme-sagiri)
 
-### 预览
 
 作者：[https://coor.top](https://coor.top)
-
-![screenshot.png](https://cdn.jsdelivr.net/gh/cetr/halo-theme-sagiri@latest/screenshot.png)
-
-### 菜单图标
-
-- 去后台 外观-菜单-左侧更多选项
-- 在图标输入框输入 `<i class="fa fa-xxxxx"></i>`
-- 其中的xxxxx替换成想要显示的图标名称
-- 图标名称在 `http://www.fontawesome.com.cn/faicons`
 
 ### 安装方式
 
@@ -32,4 +21,13 @@
 3. 远程地址填写 `https://github.com/cetr/halo-theme-sagiri.git`
 5. 点击下载，等待下载完成
 
-如果你有一下建议，可以在 [issues](https://github.com/cetr/halo-theme-sagiri/issues) 提出
+### Q&A
+
+1.菜单图标怎么设置？
+
+- 去后台 外观-菜单-左侧更多选项
+- 在图标输入框输入 `<i class="fa fa-xxxxx"></i>`
+- 其中的xxxxx替换成想要显示的图标名称
+- 图标名称在 `http://www.fontawesome.com.cn/faicons`
+
+如果您有什么意见或建议，您可以在 [issues](https://github.com/cetr/halo-theme-sagiri/issues) 提出或分享

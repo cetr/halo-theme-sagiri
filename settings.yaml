@@ -37,6 +37,55 @@ sns:
       label: Telegram
       type: text
       placeholder: '只需填入 Telegram Id 即可'
+body:
+  label: 主体设置
+  items:
+    background_picture:
+      name: background_picture
+      label: body背景图片
+      type: attachment
+    background_picture_night:
+      name: background_picture_night
+      label: 暗色模式body背景图片
+      type: attachment
+    slogan_text:
+      name: slogan_text
+      label: slogan
+      type: text
+      default: ''
+      placeholder: '默认为博客标题'
+      description: '建议使用英文字符，因为字体库只支持了英文字母及英文标点符号'
+    slogan_text_color:
+      name: slogan_text_color
+      label: slogan字体颜色
+      type: color
+      default: '#ff9800'
+    sitebar_img:
+      name: sitebar_img
+      label: '侧边栏图片'
+      type: attachment
+    evanyou:
+      name: evanyou
+      label: 背景彩条动效
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+    night_mode_enabled:
+      name: night_mode_enabled
+      label: 开启黑夜模式
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 sidebar:
   label: 侧栏
   items:
@@ -119,46 +168,6 @@ sidebar_key:
       label: sidebar_value5
       type: textarea
       description: '选填'
-body:
-  label: 主体设置
-  items:
-    background_picture:
-      name: background_picture
-      label: body背景图片
-      type: attachment
-    background_picture_night:
-      name: background_picture_night
-      label: 暗色模式body背景图片
-      type: attachment
-    slogan_text:
-      name: slogan_text
-      label: slogan
-      type: text
-      default: ''
-      placeholder: '默认为博客标题'
-      description: '推荐使用英文字符，因为字体库只支持了英文字母及英文标点符号'
-    slogan_text_color:
-      name: slogan_text_color
-      label: slogan字体颜色
-      type: text
-      default: '#ff9800'
-      placeholder: '请输入颜色码'
-      description: '填入颜色，16进制颜色：如#ff9800 或 RGB颜色：如rgb(14,127,0)'
-    sitebar_img:
-      name: sitebar_img
-      label: '侧边栏展示图片'
-      type: attachment
-    evanyou:
-      name: evanyou
-      label: 背景彩条动效
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
 menu:
   label: 菜单图标设置
   items:
@@ -233,8 +242,9 @@ comment:
           label: 开启
         - value: false
           label: 关闭
-plugin:
-  label: 插件设置
+      description: '使用Halo后台自定义评论模块则开启，使用主题自带评论模块则关闭'
+other:
+  label: 其他设置
   items:
     pjax_enabled:
       name: pjax_enabled
@@ -250,7 +260,7 @@ plugin:
           label: 关闭
     music_enabled:
       name: music_enabled
-      label: 开启背景音乐
+      label: 左下角音乐播放器
       type: radio
       data-type: bool
       default: true
@@ -302,9 +312,6 @@ plugin:
           label: 开启
         - value: false
           label: 关闭
-other:
-  label: 其他设置
-  items:
     back_to_top:
       name: back_to_top
       label: 返回顶部样式
@@ -320,14 +327,3 @@ other:
       label: 自定义样式
       type: textarea
       placeholder: '不需要 <style></style> 标签'
-    night_mode_enabled:
-      name: night_mode_enabled
-      label: 开启黑夜模式
-      type: radio
-      data-type: bool
-      default: false
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
