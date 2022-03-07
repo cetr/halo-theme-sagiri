@@ -16,7 +16,7 @@
 
                     <section id="posts" class="posts-expand">
 
-                        <article class="post post-search-header">
+                        <article class="post" style="padding: 25px;">
                             以下是包含关键字 <span style="color: #ff3f1a;">${keyword}</span> 的文章：
                         </article>
 
