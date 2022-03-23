@@ -13,3 +13,4 @@
 <#if settings.music_enabled!false>
     <link href="${theme_base!}/source/lib/aplayer/APlayer.min.css?v=${theme.version!}" rel="stylesheet">
 </#if>
+<link href="https://unpkg.com/katex@0.12.0/dist/katex.min.css" rel="stylesheet" type="text/css"/>
