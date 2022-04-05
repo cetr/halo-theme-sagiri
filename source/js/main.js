@@ -55,10 +55,11 @@ const sagiri = {
             });
         };
         var backTo = $(".back-to-top");
-        var backHeight = $(window).height() - 980 + 'px';
+        var windowHeight = $(window).height();
+        var height = windowHeight > 980 ? 980 : windowHeight;
         $(window).scroll(function () {
             if ($(window).scrollTop() > 700 && backTo.css('top') === '-900px') {
-                backTo.css('top', backHeight);
+                backTo.css('top', height - 980 + 'px');
             } else if ($(window).scrollTop() <= 700 && backTo.css('top') !== '-900px') {
                 backTo.css('top', '-900px');
             }
